@@ -1,5 +1,9 @@
 @charset "utf-8";
 @import url("webfonts/Pilsner_Bold/stylesheet.css");
+@import url("webfonts/ST_Postoronnim/stylesheet.css");
+@import url("webfonts/ST_Tablichka/stylesheet.css");
+
+
 
 .container-fluid {
     background-image: url(url);
@@ -18,7 +22,7 @@ body {
 
 .title {
   font-size: 2.5rem;
-  font-family: 'Lobster', cursive;
+  font-family:  'ST-Tablichka';
 }
 
 .navbar {
@@ -38,6 +42,7 @@ body {
     font-size: 35px;
     font-style: normal;
     font-weight: 400;
+    font-family: 'ST-Tablichka';
 }
 .container-fluid .navbar.navbar-expand-lg.navbar-light.bg-light {
     font-size: xx-large;
@@ -46,14 +51,29 @@ body {
 }
 
 .navbar-brand {
-    font-family: "Pilsner Bold";
-    font-variant: small-caps;
+    font-family: 'ST-Tablichka';
     background-color: #FFFFFF;
     font-size: 35px;
 }
-.container-fluid .navbar.navbar-expand-lg.navbar-light.bg-light .navbar-brand {
+
+
+.form-search {
+    width: 100%;
+    display: inline;
+    padding-left: 1%;
 }
 
+.input-form {
+    width: 80%;
+    margin-right: 0;
+    padding-left: 1%;
+    margin-left: 0px;
+}
+
+.seacrh-btn {
+    width: 19%;
+    margin-left: -2%;
+}
 
 
 @keyframes scroll {
@@ -66,6 +86,16 @@ body {
   .wrapper {
     animation: scroll 200s linear infinite;
   }
+.container-search {
+    width: 100%;
+    display: none;
+}
+
+.navbar.navbar-expand-lg.navbar-light.bg-light #navbarSupportedContent1 .container.justify-content-center {
+}
+
+
+
 }
 
 @media (min-width: 670px) {
