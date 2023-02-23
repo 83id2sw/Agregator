@@ -65,15 +65,17 @@ body {
 
 .input-form {
     width: 80%;
-    margin-right: 0;
     padding-left: 1%;
-    margin-left: 0px;
+	border-color: black;
+	outline: none;
 }
 
 .seacrh-btn {
     width: 19%;
-    margin-left: -2%;
     color: #6197A6;
+}
+.btn-outline-success {
+    border-color: #000000;
 }
 
 
@@ -84,20 +86,25 @@ body {
 }
 
 @media (prefers-reduced-motion) {
-  .wrapper {
-    animation: scroll 200s linear infinite;
-  }
-.container-search {
-    width: 100%;
-    display: none;
-}
+	.wrapper {
+		animation: scroll 200s linear infinite;
+	}
+	.container-search {
+		width: 100%;
+		display: none;
+	}
 
-.navbar.navbar-expand-lg.navbar-light.bg-light #navbarSupportedContent1 .container.justify-content-center {
-}
-
-
+	.navbar.navbar-expand-lg.navbar-light.bg-light #navbarSupportedContent1 .container.justify-content-center {
+	}
 
 }
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance:none;
+}s
 
 @media (min-width: 670px) {
   .title {
