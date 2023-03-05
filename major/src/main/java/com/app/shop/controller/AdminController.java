@@ -63,15 +63,15 @@ public class AdminController {
     }
 
     //Product
-    @PostMapping("/admin/products")
+    @GetMapping("/admin/products")
     public String products(Model model) {
         model.addAttribute("products", productService.getAllProduct());
         return "products";
     }
 
-    @PostMapping("/admin/products/add")
+    @GetMapping("/admin/products/add")
     public String productsAddGet(Model model) {
-        model.addAttribute("productDTO", new ProductDTO());
+        model.addAttribute("productsDTO", new ProductDTO());
         model.addAttribute("categories", categoryService.getAllCategory());
         return "productsAdd";
     }
