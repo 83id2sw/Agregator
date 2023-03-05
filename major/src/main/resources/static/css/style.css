@@ -1,0 +1,24 @@
+@import url("../webfonts/ST_Tablichka/stylesheet.css");
+/* CSS Document */
+body {
+    font-family: ST-Tablichka;	
+}
+
+.navbar {
+	background: #FF0004;
+	font-size: 20px;
+}
+
+.form-search {
+	position: sticky;
+	width: 100%;
+}
+
+.input-form {
+	width: 87%;
+}
+
+.search-btn {
+    position: sticky;
+    
+}
