@@ -7,11 +7,10 @@ import com.app.shop.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.IOException;
 import java.util.Optional;
 
 @Controller
@@ -74,5 +73,15 @@ public class AdminController {
         model.addAttribute("productsDTO", new ProductDTO());
         model.addAttribute("categories", categoryService.getAllCategory());
         return "productsAdd";
+    }
+
+    @PostMapping("/admin/products/add")
+    public String productAddPost(@ModelAttribute("productsDTO")ProductDTO productDTO,
+                                 @RequestParam("productImage")MultipartFile file,
+                                 @RequestParam("imgName")String imgName) throws IOException {
+
+
+
+        return "redirect:/admin/products";
     }
 }
