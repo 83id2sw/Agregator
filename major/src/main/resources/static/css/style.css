@@ -2,10 +2,14 @@
 /* CSS Document */
 body {
     font-family: ST-Tablichka;	
+	background-image: url(../images/logo_grid.png);
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
 }
 
 .navbar {
-	background: #FF0004;
 	font-size: 20px;
 }
 
