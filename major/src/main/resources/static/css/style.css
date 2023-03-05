@@ -10,7 +10,7 @@ body {
 }
 
 .form-search {
-	position: sticky;
+	margin: 0 auto;
 	width: 100%;
 }
 
@@ -37,6 +37,13 @@ body {
 }
 
 .search-btn-outline-success:hover {
+	color: #fff;
+	background-color: #949494;
+	border-color: #000000;
+}
+
+.search-btn-outline-success:focus {
+	outline: none;
 	color: #fff;
 	background-color: #949494;
 	border-color: #000000;
