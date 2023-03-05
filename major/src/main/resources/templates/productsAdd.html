@@ -40,7 +40,7 @@
 </nav>
 <div class="container">
     <h3>Add a new Product</h3>
-    <form th:action="@{/admin/products/add}" method="post" th:object="${productDTO}" enctype="multipart/form-data">
+    <form th:action="@{/admin/products/add}" method="post" th:object="${productsDTO}" enctype="multipart/form-data">
         <div class="row">
             <div class="col-sm-5">
 
@@ -66,11 +66,6 @@
                            placeholder="Price">
                 </div>
                 <div class="form-group">
-                    <label for="weight">Weight in grams</label>
-                    <input type="number" class="form-control" required th:field="*{weight}" name="weight" id="weight"
-                           placeholder="Weight">
-                </div>
-                <div class="form-group">
                     <label for="description">Product Description</label>
                     <textarea class="form-control" rows="5" th:field="*{description}" name="description" id="description"></textarea>
                 </div>
@@ -82,9 +77,9 @@
                     <label class="custom-file-label" for="productImage">Choose file</label>
                 </div>
                 <div class="form-group">
-                    <img src="#" id="imgPreview" height="100px" width="100px" th:src="@{${'/productImages/' + productDTO.imageName}}" style="margin-top: 20px" alt=" ">
+                    <img src="#" id="imgPreview" height="100px" width="100px" th:src="@{${'/productImages/' + productsDTO.imageName}}" style="margin-top: 20px" alt=" ">
                 </div>
-                <input type="hidden" name="imgName" th:value="${productDTO.imageName}">
+                <input type="hidden" name="imgName" th:value="${productsDTO.imageName}">
                 <button type="submit" class="btn btn-primary">Submit</button>
             </div>
         </div>

@@ -71,7 +71,7 @@ public class AdminController {
 
     @GetMapping("/admin/products/add")
     public String productsAddGet(Model model) {
-        model.addAttribute("productDTO", new ProductDTO());
+        model.addAttribute("productsDTO", new ProductDTO());
         model.addAttribute("categories", categoryService.getAllCategory());
         return "productsAdd";
     }
