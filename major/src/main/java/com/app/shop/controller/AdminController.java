@@ -25,6 +25,10 @@ public class AdminController {
     public String adminHome() {
         return "adminHome";
     }
+    @GetMapping("/index")
+    public String das() {
+        return "index";
+    }
 
     @GetMapping("/admin/categories")
     public String getCategories(Model model) {
