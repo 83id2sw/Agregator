@@ -30,7 +30,7 @@ public class AdminController {
         return "adminHome";
     }
     @GetMapping("/index")
-    public String das() {
+    public String index() {
         return "index";
     }
 
