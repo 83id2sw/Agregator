@@ -2,7 +2,7 @@
 /* CSS Document */
 body {
     font-family: ST-Tablichka;	
-	background-image: url(../images/logo_grid.png);
+	background-image: url(../images/logo_grid_4_test.png);
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -10,6 +10,8 @@ body {
 }
 
 .navbar {
+	background: #272727;
+	height: 90px;
 	font-size: 20px;
 }
 
@@ -19,7 +21,7 @@ body {
 }
 
 .input-form {
-	width: 87%;
+	width: 87%; 
 }
 
 .search-btn {
@@ -54,5 +56,13 @@ body {
 }
 
 .image-logo {
-	background: black;
+	background: #ECE03E;
+}
+
+.nav-link {
+	color: #228E5D;
+}
+
+.nav-link:hover, .nav-link:focus {
+	color: #1B704A;
 }
