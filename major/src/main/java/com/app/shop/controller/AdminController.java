@@ -29,10 +29,6 @@ public class AdminController {
     public String adminHome() {
         return "adminHome";
     }
-    @GetMapping("/index")
-    public String index() {
-        return "index";
-    }
 
     @GetMapping("/admin/categories")
     public String getCategories(Model model) {
@@ -106,4 +102,29 @@ public class AdminController {
 
         return "redirect:/admin/products";
     }
+
+    @GetMapping("/admin/product/delete/{id}")
+    public String deleteProduct(@PathVariable long id) {
+        productService.removeProductById(id);
+        return "redirect:/admin/products";
+    }
+
+    @GetMapping("/admin/product/update/{id}")
+    public String updateProductGet(@PathVariable long id, Model model) {
+        Product product = productService.getProductById(id).get();
+        ProductDTO productDTO = new ProductDTO();
+        productDTO.setId(product.getId());
+        productDTO.setName(product.getName());
+        productDTO.setCategoryId(product.getCategory().getId());
+        productDTO.setPrice(product.getPrice());
+        productDTO.setDescription(product.getDescription());
+        productDTO.setImageName(product.getImageName());
+
+        model.addAttribute("categories", categoryService.getAllCategory());
+        model.addAttribute("productsDTO", productDTO);
+
+        return "productsAdd";
+    }
+
+
 }
