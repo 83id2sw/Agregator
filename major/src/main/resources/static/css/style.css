@@ -15,6 +15,10 @@ body {
     font-family: "Tektur Medium";
 }
 
+.navbar_dropdown_icon {
+	width: 40px;
+}
+
 .navbar {
 	position: relative;
 	z-index: 10;
