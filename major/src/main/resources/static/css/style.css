@@ -3,12 +3,15 @@
 @import url("../webfonts/Tektur_Regular/stylesheet.css");
 /* CSS Document */
 body {
-    background-image: url(../images/logo_grid_4_test.png);
-	width: 100%;
-   	height: auto;
-    background-size: cover;               
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url(../images/logo_grid_4_test.png) no-repeat center center fixed; 
+	-webkit-background-size: 100%; 
+    -moz-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;             
     font-family: "Tektur Medium";
 }
 
