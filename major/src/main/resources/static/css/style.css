@@ -85,3 +85,11 @@ body {
 .carousel {
 	border: 8px solid black;
 }
+
+.heading-carousel {
+    color: #000000;	
+}
+
+.p_carousel {
+	color: #000000;
+}
