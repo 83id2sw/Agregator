@@ -4,14 +4,19 @@
 /* CSS Document */
 body {
     background-image: url(../images/logo_grid_4_test.png);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+	width: 100%;
+   	height: auto;
+    background-size: cover;               
+    background-repeat: no-repeat;
+    background-position: center;
     font-family: "Tektur Medium";
 }
 
 .navbar {
+	position: relative;
+	z-index: 10;
+	position: relative;
+	margin-top: 10px;
 	margin-bottom: 25px;
 	background: #272727;
 	height: 90px;
@@ -83,13 +88,54 @@ body {
 }
 
 .carousel {
+	position: relative;
+	margin: auto;
+	z-index: 10;
 	border: 8px solid black;
 }
 
+
+
 .heading-carousel {
-    color: #000000;	
+    color: #228E5D;	
 }
 
 .p_carousel {
-	color: #000000;
+	color: #228E5D;
 }
+
+@media screen and (max-width: 800px){   
+    #c1_big_img{      
+        content:url("../images/asd.png");
+    } 
+	 #c1_big_img{      
+        content:url("../images/asd.png");
+    } 
+	 #c1_big_img{      
+        content:url("../images/asd.png");
+    } 
+}
+
+
+
+/*
+
+.container-back {
+	margin-top: -40%;
+	z-index: -10;
+	position: relative;
+	perspective: 500px;
+	border-radius: 5px;
+}
+.style-flat {	
+	transform-style: flat;
+}
+
+.flip {
+	height: 1000px; 
+	border-radius: 5px;
+	transform: rotateX(45deg);
+	position: relative;
+	background: rgba(169,90,145,.8); 
+}
+*/
