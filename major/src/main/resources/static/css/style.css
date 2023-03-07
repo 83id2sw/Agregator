@@ -1,15 +1,18 @@
 @import url("../webfonts/ST_Tablichka/stylesheet.css");
+@import url("../webfonts/Tektur_Medium/stylesheet.css");
+@import url("../webfonts/Tektur_Regular/stylesheet.css");
 /* CSS Document */
 body {
-    font-family: ST-Tablichka;	
-	background-image: url(../images/logo_grid_4_test.png);
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
+    background-image: url(../images/logo_grid_4_test.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: "Tektur Medium";
 }
 
 .navbar {
+	margin-bottom: 25px;
 	background: #272727;
 	height: 90px;
 	font-size: 20px;
@@ -25,24 +28,29 @@ body {
 }
 
 .search-btn {
-	width: 5%;
+    width: 20%;
+    padding: 10px;
     position: sticky;
 }
 
 .input-search {
+	padding-left: 10px;
+	float: left;
+	width: 80%;
 	border-color: black;
 	border-right: none;
 	position: sticky;
-	width: 85%;
 	outline: none;
 }
 
 .search-btn-outline-success {
-	color: #6882C8;
+	width: 20%;
+	color: #228E5D;
 	border-color: #000000;
 }
 
 .search-btn-outline-success:hover {
+	width: 20%;
 	color: #fff;
 	background-color: #949494;
 	border-color: #000000;
@@ -56,7 +64,7 @@ body {
 }
 
 .image-logo {
-	background: #ECE03E;
+	background: #000000;
 }
 
 .nav-link {
@@ -65,4 +73,11 @@ body {
 
 .nav-link:hover, .nav-link:focus {
 	color: #1B704A;
+}
+
+.top-content .carousel-item {
+    height: 100vh;
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
