@@ -81,3 +81,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.carousel {
+	border: 8px solid black;
+}
