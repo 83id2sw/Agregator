@@ -2,6 +2,7 @@ package com.app.shop.controller;
 
 import com.app.shop.service.CategoryService;
 import com.app.shop.service.ProductService;
+import com.app.shop.util.ClothesAPI;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -24,6 +25,7 @@ public class HomeController {
     public String shop(Model model) {
         model.addAttribute("categories", categoryService.getAllCategory());
         model.addAttribute("products", productService.getAllProduct());
+        model.addAttribute("newProducts", ClothesAPI.items);
 
         return "shop";
     }
