@@ -21,11 +21,18 @@ public class HomeController {
         return "index";
     }
 
-    @GetMapping("/shop")
-    public String shop(Model model) {
+    @GetMapping("/shop/{sex}/{productType}")
+    public String shop(Model model,@PathVariable String sex, @PathVariable(required = false) Integer productType) {
         model.addAttribute("categories", categoryService.getAllCategory());
         model.addAttribute("products", productService.getAllProduct());
-        model.addAttribute("newProducts", ClothesAPI.items);
+        model.addAttribute("sex", sex);
+        if (productType == -1) {
+            model.addAttribute("newProducts", ClothesAPI.getAllArrays(sex));
+        } else {
+            model.addAttribute("newProducts", ClothesAPI.allItems.get(sex).getAsJsonObject().get(
+                    categoryService.getCategoryById(productType).get().getName()
+            ));
+        }
 
         return "shop";
     }
