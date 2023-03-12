@@ -12,11 +12,16 @@ public class Product {
     private Long id;
     private String name;
 
+    // Pants, Hat, etc..
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "category_id", referencedColumnName = "category_id")
     private Category category;
-    private double price;
-    private String description;
-    private String imageName;
+//    private double price;
+//    private String description;
+//    private String imageName;
+    private String code;
+
+    //Men, Ladies
+    private String categoryName;
 
 }

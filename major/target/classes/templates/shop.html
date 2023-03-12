@@ -65,7 +65,7 @@
                             <h4>$ <span th:text="${product.get('price')}"></span></h4>
                             <p th:text="${product.get('brand').getAsString()}" >Brand</p>
                             <p th:text="${product.get('categoryName').getAsString()}" >Sex</p>
-                            <a href="#" th:href="@{/shop/viewproduct/{id}(id=${product.get('code')})}" class="btn btn-warning">View Product</a>
+                            <a href="#" th:href="@{/shop/viewproduct/{id}(id=${product.get('code').getAsString()})}" class="btn btn-warning">View Product</a>
                             <a href="#" th:href="@{${product.get('linkPdp').getAsString()}}" class="btn btn-primary">Go to shop</a>
                         </div>
                     </div>

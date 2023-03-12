@@ -37,6 +37,12 @@ public class HomeController {
         return "shop";
     }
 
+    @GetMapping("/shop/viewproduct/{code}")
+    public String shopByCategory(Model model, @PathVariable String code) {
+        model.addAttribute("product", ClothesAPI.getObjectByCode(code));
+        return "viewProduct";
+    }
+
 //    @GetMapping("/shop/category/{id}")
 //    public String shopByCategory(Model model, @PathVariable int id) {
 //        model.addAttribute("categories", categoryService.getAllCategory());

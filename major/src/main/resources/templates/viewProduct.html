@@ -55,16 +55,15 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-sm-5 d-flex justify-content-center">
-            <img class="mt-5" height="300px" width="300px" src="" th:src="@{${'/productImages/' + product.imageName}}"
-                 alt="">
+            <img class="" height="600px" width="400px" th:src="@{${product.get('pictures').getAsJsonObject().get('normalPicture').getAsString()}}">
         </div>
         <div class="col-sm-7 mt-5">
-            <h2 th:text="${product.name}"></h2>
-            <p th:text="${product.category.name}"></p>
-            <h2>$ <span th:text="${product.price}"></span></h2>
-
-            <p th:text="${product.description}"></p>
-            <a href="" th:href="@{/addToCart/{id}(id = ${product.id})}" class="btn btn-primary">Add to cart</a>
+            <h2 th:text="${product.get('name').getAsString()}"></h2>
+            <h2>$ <span th:text="${product.get('price').getAsString()}"></span></h2>
+            <p th:text="${product.get('brand').getAsString()}"></p>
+            <p th:text="${product.get('categoryName').getAsString()}"></p>
+<!--            <p th:text="${product.get('color').getAsJsonArray().get(0).getAsJsonObject().getAsString()}"></p>-->
+            <a href="" th:href="@{/cart}" class="btn btn-primary">Add to favourites</a>
         </div>
     </div>
 </div>

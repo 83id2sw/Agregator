@@ -127,6 +127,22 @@ public class ClothesAPI implements CommandLineRunner {
 
     }
 
+    public static JsonObject getObjectByCode(String code){
+        String [] categories = new String[]{"Ladies", "men_all"};
+        String [] productType = new String[] {"Hat", "Pants", "Shirt", "Socks", "Shoes"};
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 5; j++) {
+                JsonArray array = allItems.get(categories[i]).getAsJsonObject().get(productType[j]).getAsJsonArray();
+                for (int k = 0; k < array.size(); k++) {
+                    if (array.get(k).getAsJsonObject().get("code").getAsString().equals(code)){
+                        return array.get(k).getAsJsonObject();
+                    }
+                }
+            }
+        }
+        return null;
+    }
+
     @Override
     public void run(String... args) throws Exception {
         getHMCloth();
