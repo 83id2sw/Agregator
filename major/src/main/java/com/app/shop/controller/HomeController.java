@@ -37,18 +37,18 @@ public class HomeController {
         return "shop";
     }
 
-    @GetMapping("/shop/category/{id}")
-    public String shopByCategory(Model model, @PathVariable int id) {
-        model.addAttribute("categories", categoryService.getAllCategory());
-        model.addAttribute("products", productService.getAllProductsByCategoryId(id));
+//    @GetMapping("/shop/category/{id}")
+//    public String shopByCategory(Model model, @PathVariable int id) {
+//        model.addAttribute("categories", categoryService.getAllCategory());
+//        model.addAttribute("products", productService.getAllProductsByCategoryId(id));
+//
+//        return "shop";
+//    }
 
-        return "shop";
-    }
-
-    @GetMapping("/shop/viewproduct/{id}")
-    public String viewProduct(Model model, @PathVariable long id) {
-        model.addAttribute("product", productService.getProductById(id).get());
-
-        return "viewProduct";
-    }
+//    @GetMapping("/shop/viewproduct/{id}")
+//    public String viewProduct(Model model, @PathVariable long id) {
+//        model.addAttribute("product", productService.getProductById(id).get());
+//
+//        return "viewProduct";
+//    }
 }

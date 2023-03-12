@@ -1,0 +1,1817 @@
+{
+  "Ladies": {
+    "Hat": [
+      {
+        "code": "1036789_group_001",
+        "name": "Straw Hat",
+        "price": 19.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/aa/bf/aabf02274913aa49ee1964403fbebe3e96dc2a34.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/aa/bf/aabf02274913aa49ee1964403fbebe3e96dc2a34.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1036789001.html",
+        "colors": [
+          "Beige",
+          "Orange"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Ladies",
+        "mainCategoryCode": "ladies_accessories_hats_sunhats"
+      },
+      {
+        "code": "1121496_group_003",
+        "name": "Cotton Sun Hat",
+        "price": 6.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/87/c8/87c83898133c9ebefd01ba202b79f54161e878d5.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/87/c8/87c83898133c9ebefd01ba202b79f54161e878d5.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1121496003.html",
+        "colors": [
+          "White",
+          "Light blue",
+          "Powder pink"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Kids",
+        "mainCategoryCode": "kids_baby_boy_accessories_hats"
+      },
+      {
+        "code": "1118710_group_006",
+        "name": "Cotton Sun Hat",
+        "price": 5.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/e9/3e/e93e257b7b90507c9618f1745741b94b274b0a43.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/e9/3e/e93e257b7b90507c9618f1745741b94b274b0a43.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1118710006.html",
+        "colors": [
+          "Dusty green",
+          "White",
+          "Blue",
+          "Taupe"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Kids",
+        "mainCategoryCode": "kids_baby_boy_accessories_hats"
+      },
+      {
+        "code": "0930385_group_004",
+        "name": "2-pack Cotton Hats",
+        "price": 8.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/0c/98/0c98ae21a129556f78df8f1813507eab3204809d.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/0c/98/0c98ae21a129556f78df8f1813507eab3204809d.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.0930385004.html",
+        "colors": [
+          "White/beige striped",
+          "Blue striped/gray melange",
+          "Light pink/dotted"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Kids",
+        "mainCategoryCode": "kids_baby_boy_accessories_hats"
+      },
+      {
+        "code": "1121465_group_001",
+        "name": "Patterned Bucket Hat",
+        "price": 17.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/fb/88/fb883d24ae23653639d006d817f5ff90881a28f9.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/fb/88/fb883d24ae23653639d006d817f5ff90881a28f9.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1121465001.html",
+        "colors": [
+          "White/floral"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Ladies",
+        "mainCategoryCode": "ladies_accessories_hats_buckethats"
+      },
+      {
+        "code": "1036789_group_005",
+        "name": "Straw Hat",
+        "price": 19.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/a1/15/a115665bb344d8f518ff0839216434476ddcba93.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/a1/15/a115665bb344d8f518ff0839216434476ddcba93.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1036789005.html",
+        "colors": [
+          "Orange",
+          "Beige"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Ladies",
+        "mainCategoryCode": "ladies_accessories_hats_sunhats"
+      },
+      {
+        "code": "1121091_group_002",
+        "name": "Straw Hat",
+        "price": 12.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/51/c9/51c97a18568dc263c9bad1ddfdea0daa09dc3056.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/51/c9/51c97a18568dc263c9bad1ddfdea0daa09dc3056.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1121091002.html",
+        "colors": [
+          "Light beige",
+          "Beige"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Ladies",
+        "mainCategoryCode": "ladies_accessories_hats_sunhats"
+      },
+      {
+        "code": "0981231_group_001",
+        "name": "Rib-knit Hat",
+        "price": 9.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/c3/5d/c35d6a54348f23feb603464dfd07343ed1e5ab45.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/c3/5d/c35d6a54348f23feb603464dfd07343ed1e5ab45.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.0981231001.html",
+        "colors": [
+          "Black",
+          "Light gray melange",
+          "Mustard yellow"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_accessories_hatscaps_beanie"
+      },
+      {
+        "code": "1121463_group_001",
+        "name": "Crochet-look Bucket Hat",
+        "price": 17.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/ea/c0/eac0da765742ef85d8b32e293361b36531db0df9.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/ea/c0/eac0da765742ef85d8b32e293361b36531db0df9.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1121463001.html",
+        "colors": [
+          "Beige/striped"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Ladies",
+        "mainCategoryCode": "ladies_accessories_hats_buckethats"
+      },
+      {
+        "code": "1121497_group_001",
+        "name": "2-pack Cotton Sun Hats",
+        "price": 14.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/ab/27/ab27be88567d37f1597edfd6d225dcd2483beac8.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/ab/27/ab27be88567d37f1597edfd6d225dcd2483beac8.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1121497001.html",
+        "colors": [
+          "Light pink/floral"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Kids",
+        "mainCategoryCode": "kids_baby_boy_accessories_hats"
+      }
+    ],
+    "Pants": [
+      {
+        "code": "1156823_group_001",
+        "name": "Linen-blend Pants",
+        "price": 49.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/23/da/23da9d8e20876cf42b2ac58f3e9e8da2c4eeeaa7.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/23/da/23da9d8e20876cf42b2ac58f3e9e8da2c4eeeaa7.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1156823001.html",
+        "colors": [
+          "White/striped"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Ladies",
+        "mainCategoryCode": "ladies_trousers_highwaisted"
+      },
+      {
+        "code": "1052354_group_002",
+        "name": "Suit",
+        "price": 64.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/88/86/8886aa381b1692db25420718ca66e3508ca25343.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/88/86/8886aa381b1692db25420718ca66e3508ca25343.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1052354002.html",
+        "colors": [
+          "Navy blue",
+          "Black"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Kids",
+        "mainCategoryCode": "kids_clothing_trousersjeans_trousers"
+      },
+      {
+        "code": "1138003_group_003",
+        "name": "Linen-blend Pull-on Pants",
+        "price": 27.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/13/81/13813661db31277d98529ca15cd0c6a192113e01.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/13/81/13813661db31277d98529ca15cd0c6a192113e01.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1138003003.html",
+        "colors": [
+          "Black",
+          "Light beige",
+          "Cream/leaf-patterned",
+          "Cerise"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Ladies",
+        "mainCategoryCode": "ladies_trousers"
+      },
+      {
+        "code": "0751471_group_001",
+        "name": "Slacks",
+        "price": 19.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/3d/96/3d9646c42c6eb94072fc7999ebe56da158426006.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/3d/96/3d9646c42c6eb94072fc7999ebe56da158426006.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.0751471001.html",
+        "colors": [
+          "Black",
+          "Cream",
+          "Navy blue",
+          "Orange"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Ladies",
+        "mainCategoryCode": "ladies_trousers_chinosslacks"
+      },
+      {
+        "code": "1161298_group_001",
+        "name": "Patterned Pants",
+        "price": 39.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/82/33/82335c60f52a1c608b60c41b61615641e8136383.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/82/33/82335c60f52a1c608b60c41b61615641e8136383.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1161298001.html",
+        "colors": [
+          "Bright green/striped"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Ladies",
+        "mainCategoryCode": "ladies_trousers"
+      },
+      {
+        "code": "1156829_group_001",
+        "name": "Wide-leg Utility Pants",
+        "price": 59.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/8c/c8/8cc834223ca7824a9a49548c2540b845ee070aa0.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/8c/c8/8cc834223ca7824a9a49548c2540b845ee070aa0.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1156829001.html",
+        "colors": [
+          "Black"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Ladies",
+        "mainCategoryCode": "ladies_trousers_wideleg"
+      },
+      {
+        "code": "1124226_group_001",
+        "name": "Slim Fit Suit Pants",
+        "price": 27.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/a0/5c/a05c3f4f6b2a74635dc0aff7f224da164f0d8c53.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/a0/5c/a05c3f4f6b2a74635dc0aff7f224da164f0d8c53.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1124226001.html",
+        "colors": [
+          "Blue",
+          "Light blue melange"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Kids",
+        "mainCategoryCode": "kids_clothing_trousersjeans_trousers"
+      },
+      {
+        "code": "1138003_group_002",
+        "name": "Linen-blend Pull-on Pants",
+        "price": 27.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/e3/a1/e3a153c58ca108536fec02ab2ec315ca563331cd.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/e3/a1/e3a153c58ca108536fec02ab2ec315ca563331cd.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1138003002.html",
+        "colors": [
+          "Light beige",
+          "Black",
+          "Cream/leaf-patterned",
+          "Cerise"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Ladies",
+        "mainCategoryCode": "ladies_trousers"
+      },
+      {
+        "code": "0970817_group_001",
+        "name": "Regular Fit Sweatpants",
+        "price": 19.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/21/83/2183dd161a43e1665785a9f87a131d355abc2b5a.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/21/83/2183dd161a43e1665785a9f87a131d355abc2b5a.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.0970817001.html",
+        "colors": [
+          "Black",
+          "Steel gray",
+          "Beige",
+          "Teal"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_trousers_joggers"
+      },
+      {
+        "code": "0751471_group_072",
+        "name": "Slacks",
+        "price": 19.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/8c/9b/8c9ba885cd56419904f9dfad4a437d91b2affe16.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/8c/9b/8c9ba885cd56419904f9dfad4a437d91b2affe16.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.0751471072.html",
+        "colors": [
+          "Cream",
+          "Black",
+          "Navy blue",
+          "Orange"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Ladies",
+        "mainCategoryCode": "ladies_trousers_chinosslacks"
+      }
+    ],
+    "Shirt": [
+      {
+        "code": "1161297_group_001",
+        "name": "Oversized Shirt",
+        "price": 29.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/28/b9/28b94ade4aef0ecbb5e73634e1be157727c7a0a9.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/28/b9/28b94ade4aef0ecbb5e73634e1be157727c7a0a9.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1161297001.html",
+        "colors": [
+          "Bright green/striped"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Ladies",
+        "mainCategoryCode": "ladies_shirtsblouses_shirts"
+      },
+      {
+        "code": "1136267_group_001",
+        "name": "Relaxed Fit Hoodie",
+        "price": 39.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/61/60/6160e739b9a3d7d1e268b0f03fb22289ebe8ea21.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/61/60/6160e739b9a3d7d1e268b0f03fb22289ebe8ea21.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1136267001.html",
+        "colors": [
+          "Cream/Keith Haring",
+          "Yellow/Keith Haring"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_hoodiessweatshirts_hoodies"
+      },
+      {
+        "code": "1125720_group_001",
+        "name": "Linen Shirt",
+        "price": 29.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/f0/5b/f05b0a482c2d6b87776d101d790c501483b18080.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/f0/5b/f05b0a482c2d6b87776d101d790c501483b18080.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1125720001.html",
+        "colors": [
+          "White",
+          "Black",
+          "Light blue melange",
+          "Light beige melange"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Ladies",
+        "mainCategoryCode": "ladies_premium_selection_tops"
+      },
+      {
+        "code": "1125720_group_004",
+        "name": "Linen Shirt",
+        "price": 29.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/64/51/6451ed8381f30583f9f394a103a79227436efe0d.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/64/51/6451ed8381f30583f9f394a103a79227436efe0d.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1125720004.html",
+        "colors": [
+          "Light beige melange",
+          "White",
+          "Black",
+          "Light blue melange"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Ladies",
+        "mainCategoryCode": "ladies_premium_selection_tops"
+      },
+      {
+        "code": "0970819_group_001",
+        "name": "Relaxed Fit Hoodie",
+        "price": 24.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/89/6d/896dd97ce2f9563e3ef2f539b4a1d64e49302d82.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/89/6d/896dd97ce2f9563e3ef2f539b4a1d64e49302d82.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.0970819001.html",
+        "colors": [
+          "Black",
+          "White",
+          "Taupe",
+          "Light gray melange"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_hoodiessweatshirts_hoodies"
+      },
+      {
+        "code": "0812928_group_001",
+        "name": "Easy-iron Shirt",
+        "price": 9.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/1a/8f/1a8f737357cfad29911bda62e8efab6aa6ed8860.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/1a/8f/1a8f737357cfad29911bda62e8efab6aa6ed8860.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.0812928001.html",
+        "colors": [
+          "White"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Kids",
+        "mainCategoryCode": "kids_boys_clothing_tshirtsshirts_shirts"
+      },
+      {
+        "code": "1125720_group_002",
+        "name": "Linen Shirt",
+        "price": 29.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/84/ac/84ac04403c34c62a6cd342db00e020362b3555e7.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/84/ac/84ac04403c34c62a6cd342db00e020362b3555e7.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1125720002.html",
+        "colors": [
+          "Black",
+          "White",
+          "Light blue melange",
+          "Light beige melange"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Ladies",
+        "mainCategoryCode": "ladies_premium_selection_tops"
+      },
+      {
+        "code": "1125720_group_003",
+        "name": "Linen Shirt",
+        "price": 29.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/ce/cf/cecf3db7f22260ab5b7e85923fbad65ec86a46df.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/ce/cf/cecf3db7f22260ab5b7e85923fbad65ec86a46df.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1125720003.html",
+        "colors": [
+          "Light blue melange",
+          "White",
+          "Black",
+          "Light beige melange"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Ladies",
+        "mainCategoryCode": "ladies_premium_selection_tops"
+      },
+      {
+        "code": "1153267_group_002",
+        "name": "Eyelet Embroidered Shirt",
+        "price": 44.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/56/35/5635275bd3f5e66097acbcaf8c5c263317323b0f.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/56/35/5635275bd3f5e66097acbcaf8c5c263317323b0f.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1153267002.html",
+        "colors": [
+          "White",
+          "Bright blue"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Ladies",
+        "mainCategoryCode": "ladies_shirtsblouses_shirts"
+      },
+      {
+        "code": "0456163_group_145",
+        "name": "Hoodie",
+        "price": 19.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/de/1a/de1a371d2085bda21a74cef2ca7278916e3866c7.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/de/1a/de1a371d2085bda21a74cef2ca7278916e3866c7.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.0456163145.html",
+        "colors": [
+          "Beige",
+          "Black",
+          "Light gray melange",
+          "White"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Ladies",
+        "mainCategoryCode": "ladies_basics_tops_longsleeve"
+      }
+    ],
+    "Socks": [
+      {
+        "code": "0717816_group_019",
+        "name": "10-pack Socks",
+        "price": 17.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/af/48/af4890fff6a80980090a0242efbfe16223901a86.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/af/48/af4890fff6a80980090a0242efbfe16223901a86.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.0717816019.html",
+        "colors": [
+          "White/light beige",
+          "Black",
+          "White",
+          "Gray-green/black"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Ladies",
+        "mainCategoryCode": "ladies_sockstights_socks"
+      },
+      {
+        "code": "1039177_group_003",
+        "name": "5-pack Non-slip Socks",
+        "price": 10.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/c0/1a/c01ae455cc9c465d441378c485cd8bc8494128ca.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/c0/1a/c01ae455cc9c465d441378c485cd8bc8494128ca.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1039177003.html",
+        "colors": [
+          "White",
+          "Brown/beige",
+          "Sage green/cream/gray melange",
+          "Light pink/Pink/Cream"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Kids",
+        "mainCategoryCode": "kids_new_born_clothing_sockstights_socks"
+      },
+      {
+        "code": "1123215_group_002",
+        "name": "4-pack Socks",
+        "price": 10.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/c6/10/c610db9d1e6126fa712e2a03b9a09e4f80b6af38.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/c6/10/c610db9d1e6126fa712e2a03b9a09e4f80b6af38.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1123215002.html",
+        "colors": [
+          "Light beige/white",
+          "Dark pink/light pink",
+          "Light green/pastels",
+          "Lingt pink/light turquoise"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Kids",
+        "mainCategoryCode": "kids_new_born_clothing_sockstights_socks"
+      },
+      {
+        "code": "0717816_group_003",
+        "name": "10-pack Socks",
+        "price": 17.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/fe/6e/fe6e3875094b75641a4750ee1f9582e3224a41a2.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/fe/6e/fe6e3875094b75641a4750ee1f9582e3224a41a2.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.0717816003.html",
+        "colors": [
+          "White",
+          "Black",
+          "White/light beige",
+          "Gray-green/black"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Ladies",
+        "mainCategoryCode": "ladies_sockstights_socks"
+      },
+      {
+        "code": "0717816_group_001",
+        "name": "10-pack Socks",
+        "price": 17.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/11/fe/11fe28e66e57dacc54abb58c79b2c70120baf7ff.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/11/fe/11fe28e66e57dacc54abb58c79b2c70120baf7ff.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.0717816001.html",
+        "colors": [
+          "Black",
+          "White",
+          "White/light beige",
+          "Gray-green/black"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Ladies",
+        "mainCategoryCode": "ladies_sockstights_socks"
+      },
+      {
+        "code": "0647207_group_036",
+        "name": "5-pack Socks",
+        "price": 14.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/a9/ca/a9ca4076b095ac4469c0e0de42495577114ecaba.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/a9/ca/a9ca4076b095ac4469c0e0de42495577114ecaba.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.0647207036.html",
+        "colors": [
+          "Dark green/gray melange",
+          "White/black",
+          "Dark green",
+          "Pigeon blue/white/gray-green"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_socks"
+      },
+      {
+        "code": "1007333_group_001",
+        "name": "10-pack Socks",
+        "price": 24.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/e3/35/e3355a0d5c2342eb219bdad3188d37537ced7969.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/e3/35/e3355a0d5c2342eb219bdad3188d37537ced7969.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1007333001.html",
+        "colors": [
+          "Black",
+          "Gray melange/black",
+          "Blue/gray"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_socks"
+      },
+      {
+        "code": "0679687_group_059",
+        "name": "7-pack Ankle Socks",
+        "price": 9.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/da/df/dadf20778357c4dca924dd69a7de78a696006a64.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/da/df/dadf20778357c4dca924dd69a7de78a696006a64.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.0679687059.html",
+        "colors": [
+          "White",
+          "Black",
+          "Yellow/pink",
+          "Apricot/tropical flowers"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Kids",
+        "mainCategoryCode": "kids_girls_clothing_sockstights_socks"
+      },
+      {
+        "code": "1118405_group_001",
+        "name": "3-pack Sports Socks in DryMove™",
+        "price": 12.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/c2/b6/c2b655acb04b6ce06da86ed15a8dd968f4a3d73b.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/c2/b6/c2b655acb04b6ce06da86ed15a8dd968f4a3d73b.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1118405001.html",
+        "colors": [
+          "White/black"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Ladies,SPORTSWEAR",
+        "mainCategoryCode": "ladies_sockstights_socks_sport"
+      },
+      {
+        "code": "0742911_group_005",
+        "name": "10-pack Socks",
+        "price": 14.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/89/4d/894d757512fc6ce7efc0f535499de414411bd8b1.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/89/4d/894d757512fc6ce7efc0f535499de414411bd8b1.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.0742911005.html",
+        "colors": [
+          "Beige",
+          "Light purple/light green/pink",
+          "Light purple/pink"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Kids",
+        "mainCategoryCode": "kids_new_born_clothing_sockstights_socks"
+      }
+    ],
+    "Shoes": [
+      {
+        "code": "1082477_group_008",
+        "name": "Chunky Loafers",
+        "price": 39.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/64/05/6405b96c45a7a3412716ec303780881b743644f3.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/64/05/6405b96c45a7a3412716ec303780881b743644f3.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1082477008.html",
+        "colors": [
+          "Black",
+          "Black"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Ladies",
+        "mainCategoryCode": "ladies_shoes"
+      },
+      {
+        "code": "0887882_group_022",
+        "name": "Sandals",
+        "price": 19.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/06/11/06117de60a5a8468d066f3975bf554a1e79c7123.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/06/11/06117de60a5a8468d066f3975bf554a1e79c7123.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.0887882022.html",
+        "colors": [
+          "Cream",
+          "Light brown",
+          "Powder pink",
+          "Light pink/color-block"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Kids",
+        "mainCategoryCode": "kids_baby_girl_shoes"
+      },
+      {
+        "code": "1087566_group_006",
+        "name": "Ballet Flats",
+        "price": 19.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/56/39/563916eb2c45eb96c58cc3a3d1af26a7fb75f7cf.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/56/39/563916eb2c45eb96c58cc3a3d1af26a7fb75f7cf.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1087566006.html",
+        "colors": [
+          "White/flowers",
+          "Red",
+          "White/glitter"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Kids",
+        "mainCategoryCode": "kids_girls_shoes_ballerinasflats"
+      },
+      {
+        "code": "0887882_group_019",
+        "name": "Sandals",
+        "price": 19.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/55/36/5536ee0c82f2d71e8eebc9ca053e0758f54ae73c.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/55/36/5536ee0c82f2d71e8eebc9ca053e0758f54ae73c.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.0887882019.html",
+        "colors": [
+          "Light brown",
+          "Powder pink",
+          "Cream",
+          "Light pink/color-block"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Kids",
+        "mainCategoryCode": "kids_baby_girl_shoes"
+      },
+      {
+        "code": "1037082_group_010",
+        "name": "Sandals",
+        "price": 24.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/98/a1/98a19c5f347e6aa1bf2a381349d4b6aa9a81646c.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/98/a1/98a19c5f347e6aa1bf2a381349d4b6aa9a81646c.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1037082010.html",
+        "colors": [
+          "Light brown",
+          "Gold-colored",
+          "Dusty rose",
+          "Natural white"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Kids",
+        "mainCategoryCode": "kids_girls_shoes_sandalsflipflops"
+      },
+      {
+        "code": "1127448_group_003",
+        "name": "Sneakers",
+        "price": 29.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/32/d9/32d954345030c313cb326b87e2bc6179e143c5af.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/32/d9/32d954345030c313cb326b87e2bc6179e143c5af.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1127448003.html",
+        "colors": [
+          "Dark blue",
+          "White",
+          "Green"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Kids",
+        "mainCategoryCode": "kids_boys_shoes"
+      },
+      {
+        "code": "1087578_group_007",
+        "name": "Ballet Flats",
+        "price": 14.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/60/e6/60e624c0d4d44c372122ee459f3cd246c0d37e80.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/60/e6/60e624c0d4d44c372122ee459f3cd246c0d37e80.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1087578007.html",
+        "colors": [
+          "Gold-colored",
+          "Black",
+          "White"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Kids",
+        "mainCategoryCode": "kids_girls_shoes_ballerinasflats"
+      },
+      {
+        "code": "0949989_group_001",
+        "name": "Espadrille Sneakers",
+        "price": 35.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/bd/9f/bd9f75bcdce0ac4414905fe17d0e557701e09a95.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/bd/9f/bd9f75bcdce0ac4414905fe17d0e557701e09a95.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.0949989001.html",
+        "colors": [
+          "White"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Ladies",
+        "mainCategoryCode": "ladies_shoes_espandrilles"
+      },
+      {
+        "code": "1136898_group_001",
+        "name": "Leather clogs",
+        "price": 74.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/db/3a/db3ab41bddf359941b3fafe6bd25a6748111bce1.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/db/3a/db3ab41bddf359941b3fafe6bd25a6748111bce1.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1136898001.html",
+        "colors": [
+          "Black"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Ladies",
+        "mainCategoryCode": "ladies_shoes"
+      },
+      {
+        "code": "0887882_group_025",
+        "name": "Sandals",
+        "price": 19.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/42/2d/422d0f9b1c7410a5b860634d0c9dc1db2cc4cbb1.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/42/2d/422d0f9b1c7410a5b860634d0c9dc1db2cc4cbb1.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.0887882025.html",
+        "colors": [
+          "Light pink/color-block",
+          "Light brown",
+          "Powder pink",
+          "Cream"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Kids",
+        "mainCategoryCode": "kids_baby_girl_shoes"
+      }
+    ]
+  },
+  "men_all": {
+    "Hat": [
+      {
+        "code": "0982706_group_001",
+        "name": "Cotton Twill Bucket Hat",
+        "price": 9.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/5e/12/5e123dc31d6f7f8e3ed2cb1958aa77f3915e086e.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/5e/12/5e123dc31d6f7f8e3ed2cb1958aa77f3915e086e.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.0982706001.html",
+        "colors": [
+          "Black",
+          "Coral"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_accessories_hatscaps_hats"
+      },
+      {
+        "code": "1137177_group_001",
+        "name": "Terry Bucket Hat",
+        "price": 17.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/dd/e5/dde5b45d0e13908e67a3be148f2c5d37dc9ff76b.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/dd/e5/dde5b45d0e13908e67a3be148f2c5d37dc9ff76b.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1137177001.html",
+        "colors": [
+          "Cream/Keith Haring",
+          "Red/Keith Haring"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_accessories_hatscaps_hats"
+      },
+      {
+        "code": "1154175_group_002",
+        "name": "Patterned Cotton Bucket Hat",
+        "price": 12.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/b1/fd/b1fd424f24d9de59cb0a54a06e3b8ef079f3b257.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/b1/fd/b1fd424f24d9de59cb0a54a06e3b8ef079f3b257.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1154175002.html",
+        "colors": [
+          "Black/patterned"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_accessories_hatscaps_hats"
+      },
+      {
+        "code": "1155451_group_001",
+        "name": "Reversible Bucket Hat",
+        "price": 17.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/7c/1e/7c1ef08cd0e5ce9b7e601b222345b99330ebf20f.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/7c/1e/7c1ef08cd0e5ce9b7e601b222345b99330ebf20f.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1155451001.html",
+        "colors": [
+          "Light beige/Keith Haring"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_accessories_hatscaps_hats"
+      },
+      {
+        "code": "1137177_group_002",
+        "name": "Terry Bucket Hat",
+        "price": 17.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/dc/17/dc17e724e770a88b7f71bbf1d760b051060bd794.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/dc/17/dc17e724e770a88b7f71bbf1d760b051060bd794.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1137177002.html",
+        "colors": [
+          "Red/Keith Haring",
+          "Cream/Keith Haring"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_accessories_hatscaps_hats"
+      },
+      {
+        "code": "0981231_group_001",
+        "name": "Rib-knit Hat",
+        "price": 9.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/c3/5d/c35d6a54348f23feb603464dfd07343ed1e5ab45.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/c3/5d/c35d6a54348f23feb603464dfd07343ed1e5ab45.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.0981231001.html",
+        "colors": [
+          "Black",
+          "Light gray melange",
+          "Mustard yellow"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_accessories_hatscaps_beanie"
+      },
+      {
+        "code": "0998092_group_001",
+        "name": "Rib-knit Hat",
+        "price": 9.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/a6/bb/a6bbf68757c4550ff2dc49f0ae6ff67bde4e2272.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/a6/bb/a6bbf68757c4550ff2dc49f0ae6ff67bde4e2272.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.0998092001.html",
+        "colors": [
+          "Black",
+          "Light gray melange"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_accessories_hatscaps_beanie"
+      },
+      {
+        "code": "1090234_group_001",
+        "name": "Rib-knit Hat",
+        "price": 9.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/60/75/60756f9e8f4c4e2a0db19285150be19d8f021ad8.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/60/75/60756f9e8f4c4e2a0db19285150be19d8f021ad8.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1090234001.html",
+        "colors": [
+          "Black",
+          "Gray melange"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_accessories_hatscaps_beanie"
+      },
+      {
+        "code": "1147481_group_002",
+        "name": "Rib-knit Cotton Beanie",
+        "price": 9.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/d1/aa/d1aa6da67e4c11bf68fbd9d3b38112bb38582dea.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/d1/aa/d1aa6da67e4c11bf68fbd9d3b38112bb38582dea.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1147481002.html",
+        "colors": [
+          "Deep lilac",
+          "Off-white",
+          "Fern green",
+          "Crimson red"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_accessories_hatscaps_beanie"
+      },
+      {
+        "code": "1147481_group_005",
+        "name": "Rib-knit Cotton Beanie",
+        "price": 9.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/98/4e/984ea06770c8ec7b5ad230cac45fe51d5701c675.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/98/4e/984ea06770c8ec7b5ad230cac45fe51d5701c675.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1147481005.html",
+        "colors": [
+          "Crimson red",
+          "Deep lilac",
+          "Off-white",
+          "Fern green"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_accessories_hatscaps_beanie"
+      }
+    ],
+    "Pants": [
+      {
+        "code": "1084281_group_005",
+        "name": "Relaxed Fit Overalls",
+        "price": 64.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/f0/bf/f0bf8b8730d5e32cae987d40a34b087f91d1f0c6.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/f0/bf/f0bf8b8730d5e32cae987d40a34b087f91d1f0c6.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1084281005.html",
+        "colors": [
+          "Cream",
+          "Black",
+          "Beige/color-block",
+          "Khaki green/patterned"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_trousers"
+      },
+      {
+        "code": "0970816_group_010",
+        "name": "2-pack Regular Fit Sweatpants",
+        "price": 39.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/4a/d3/4ad3f5d7483ebb39179b11697882366f13cdb199.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/4a/d3/4ad3f5d7483ebb39179b11697882366f13cdb199.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.0970816010.html",
+        "colors": [
+          "Dark brown/light blue",
+          "Black/light gray melange",
+          "Green/light beige",
+          "Black/gray melange"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_trousers_trousers_regular_all"
+      },
+      {
+        "code": "1123279_group_002",
+        "name": "Essentials No 9: THE CHINOS",
+        "price": 49.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/d7/5a/d75af31022ff3b8625f4fb85a7884ad45e8cbb32.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/d7/5a/d75af31022ff3b8625f4fb85a7884ad45e8cbb32.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1123279002.html",
+        "colors": [
+          "Navy blue",
+          "Cream"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_trousers_chinos_regular_all"
+      },
+      {
+        "code": "1099965_group_001",
+        "name": "Essentials No 13: THE SLACKS",
+        "price": 49.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/64/c7/64c7b84d9391de530bab134054857010b9a85418.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/64/c7/64c7b84d9391de530bab134054857010b9a85418.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1099965001.html",
+        "colors": [
+          "Navy blue"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_trousers_dressed"
+      },
+      {
+        "code": "1123279_group_001",
+        "name": "Essentials No 9: THE CHINOS",
+        "price": 49.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/45/6d/456dfd57da539b4d152aa60f9e71c57c849aa7f4.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/45/6d/456dfd57da539b4d152aa60f9e71c57c849aa7f4.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1123279001.html",
+        "colors": [
+          "Cream",
+          "Navy blue"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_trousers_chinos_regular_all"
+      },
+      {
+        "code": "0970817_group_001",
+        "name": "Regular Fit Sweatpants",
+        "price": 19.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/21/83/2183dd161a43e1665785a9f87a131d355abc2b5a.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/21/83/2183dd161a43e1665785a9f87a131d355abc2b5a.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.0970817001.html",
+        "colors": [
+          "Black",
+          "Steel gray",
+          "Beige",
+          "Teal"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_trousers_joggers"
+      },
+      {
+        "code": "1002227_group_001",
+        "name": "Cargo Joggers",
+        "price": 39.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/4f/79/4f79ccb812d79b9d33745b9f76461ec9bf81de24.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/4f/79/4f79ccb812d79b9d33745b9f76461ec9bf81de24.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1002227001.html",
+        "colors": [
+          "Black",
+          "Khaki green",
+          "Dark gray",
+          "Beige"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_trousers_cargo"
+      },
+      {
+        "code": "1038427_group_002",
+        "name": "Regular Fit Twill Cargo Pants",
+        "price": 39.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/05/af/05afb4b6f0693943f5bc1979de54af35d2a9bd9c.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/05/af/05afb4b6f0693943f5bc1979de54af35d2a9bd9c.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1038427002.html",
+        "colors": [
+          "Light beige",
+          "Black",
+          "Khaki green",
+          "Gray"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_trousers_cargo"
+      },
+      {
+        "code": "0761501_group_006",
+        "name": "Slim Fit Linen Suit Pants",
+        "price": 49.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/9f/60/9f60fe14cb048c6f1ddead49d573b06a175e04b5.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/9f/60/9f60fe14cb048c6f1ddead49d573b06a175e04b5.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.0761501006.html",
+        "colors": [
+          "Light beige melange",
+          "Khaki green",
+          "Beige",
+          "Denim blue"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_trousers_dressed"
+      },
+      {
+        "code": "0714032_group_038",
+        "name": "Skinny Fit Suit Pants",
+        "price": 39.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/16/1b/161b1faaaf56c3b432073b9b780338dbfe00896b.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/16/1b/161b1faaaf56c3b432073b9b780338dbfe00896b.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.0714032038.html",
+        "colors": [
+          "Black",
+          "Burgundy",
+          "Dark blue",
+          "Gray"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_trousers_trousers_skinny_all"
+      }
+    ],
+    "Shirt": [
+      {
+        "code": "1099513_group_001",
+        "name": "Oversized Fit Sweatshirt",
+        "price": 29.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/ad/f1/adf13af9e2274bd491c6ff7ad05205f482d3b848.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/ad/f1/adf13af9e2274bd491c6ff7ad05205f482d3b848.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1099513001.html",
+        "colors": [
+          "Black",
+          "Blue",
+          "Green",
+          "Brown"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_hoodiessweatshirts_sweatshirts"
+      },
+      {
+        "code": "1007262_group_035",
+        "name": "Regular Fit Hoodie",
+        "price": 34.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/11/c1/11c1c6e16757d3db40ca2b0a24e84d4e9bf366a3.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/11/c1/11c1c6e16757d3db40ca2b0a24e84d4e9bf366a3.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1007262035.html",
+        "colors": [
+          "Light purple",
+          "Black/flowers",
+          "Black/Hello Worlds",
+          "Gray/Dynamic Visions"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_hoodiessweatshirts_hoodies"
+      },
+      {
+        "code": "1075803_group_001",
+        "name": "Relaxed Fit Patterned Resort Shirt",
+        "price": 17.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/ec/c9/ecc98f1cd7cf559faa4aaaaac34cc32606ae74b4.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/ec/c9/ecc98f1cd7cf559faa4aaaaac34cc32606ae74b4.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1075803001.html",
+        "colors": [
+          "Red/white",
+          "White/dark blue",
+          "Dark blue/striped"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_shirts_casual"
+      },
+      {
+        "code": "1103620_group_001",
+        "name": "Essentials No 3: THE HOODIE",
+        "price": 34.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/6a/f0/6af03854e49a7cec3233d169134e8057047d8362.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/6a/f0/6af03854e49a7cec3233d169134e8057047d8362.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1103620001.html",
+        "colors": [
+          "Black",
+          "Light beige",
+          "Mint green",
+          "Light blue"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_hoodiessweatshirts_hoodies"
+      },
+      {
+        "code": "1127523_group_001",
+        "name": "Essentials No 17: THE LINEN SHIRT",
+        "price": 39.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/7d/f3/7df3fa9a727ccb42c75a5c44f3b7c38f0d2ec595.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/7d/f3/7df3fa9a727ccb42c75a5c44f3b7c38f0d2ec595.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1127523001.html",
+        "colors": [
+          "White",
+          "Light beige",
+          "Light blue",
+          "Brown"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_shirts_casual"
+      },
+      {
+        "code": "1103620_group_002",
+        "name": "Essentials No 3: THE HOODIE",
+        "price": 34.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/ac/41/ac416218726238c437079579313f31942efd7d92.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/ac/41/ac416218726238c437079579313f31942efd7d92.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1103620002.html",
+        "colors": [
+          "Light beige",
+          "Black",
+          "Mint green",
+          "Light blue"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_hoodiessweatshirts_hoodies"
+      },
+      {
+        "code": "1103620_group_007",
+        "name": "Essentials No 3: THE HOODIE",
+        "price": 34.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/1f/a6/1fa66bcbe3f9cb979eb506957679da5ec923a884.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/1f/a6/1fa66bcbe3f9cb979eb506957679da5ec923a884.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1103620007.html",
+        "colors": [
+          "Light blue",
+          "Black",
+          "Light beige",
+          "Mint green"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_hoodiessweatshirts_hoodies"
+      },
+      {
+        "code": "1103619_group_001",
+        "name": "Essentials No 11: THE SWEATSHIRT",
+        "price": 29.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/c0/8a/c08ae5f606652e880babcb3aa5753ae888600b41.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/c0/8a/c08ae5f606652e880babcb3aa5753ae888600b41.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1103619001.html",
+        "colors": [
+          "Black",
+          "Brown",
+          "Light beige",
+          "Beige"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_hoodiessweatshirts_sweatshirts"
+      },
+      {
+        "code": "1127523_group_002",
+        "name": "Essentials No 17: THE LINEN SHIRT",
+        "price": 39.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/c6/83/c683cb07534c5fe4aeab5f57ebcf32f4f6376523.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/c6/83/c683cb07534c5fe4aeab5f57ebcf32f4f6376523.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1127523002.html",
+        "colors": [
+          "Light beige",
+          "White",
+          "Light blue",
+          "Brown"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_shirts_casual"
+      },
+      {
+        "code": "1127523_group_003",
+        "name": "Essentials No 17: THE LINEN SHIRT",
+        "price": 39.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/30/b7/30b7b2750b23b8c4f7070fd91d8cfdc2765fa594.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/30/b7/30b7b2750b23b8c4f7070fd91d8cfdc2765fa594.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1127523003.html",
+        "colors": [
+          "Light blue",
+          "White",
+          "Light beige",
+          "Brown"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_shirts_casual"
+      }
+    ],
+    "Socks": [
+      {
+        "code": "1095083_group_001",
+        "name": "5-pack Socks",
+        "price": 17.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/c6/ad/c6ade739f574e414cd1bacfd5838772a74cb4465.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/c6/ad/c6ade739f574e414cd1bacfd5838772a74cb4465.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1095083001.html",
+        "colors": [
+          "Light gray/navy blue"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_socks"
+      },
+      {
+        "code": "1144810_group_001",
+        "name": "Essentials: THE SOCK",
+        "price": 12.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/93/f7/93f7ada8b75df2265d74afecb9a960ca3f6cb2b6.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/93/f7/93f7ada8b75df2265d74afecb9a960ca3f6cb2b6.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1144810001.html",
+        "colors": [
+          "Black"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_socks_multipacks"
+      },
+      {
+        "code": "1072353_group_056",
+        "name": "Motif-detail Socks",
+        "price": 5.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/d3/47/d34751078f973ec1ca3be21606b19335815ae1ea.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/d3/47/d34751078f973ec1ca3be21606b19335815ae1ea.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1072353056.html",
+        "colors": [
+          "White/Keith Haring",
+          "White/Yale",
+          "Black/Stranger Things",
+          "White/SpongeBob SquarePants"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_socks"
+      },
+      {
+        "code": "1072353_group_055",
+        "name": "Motif-detail Socks",
+        "price": 5.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/d3/17/d3171c0b1b3ce477cf2fc6cc52a268681773d41e.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/d3/17/d3171c0b1b3ce477cf2fc6cc52a268681773d41e.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1072353055.html",
+        "colors": [
+          "White/Yale",
+          "Black/Stranger Things",
+          "White/SpongeBob SquarePants",
+          "Black/Rick and Morty"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_socks"
+      },
+      {
+        "code": "0647207_group_036",
+        "name": "5-pack Socks",
+        "price": 14.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/a9/ca/a9ca4076b095ac4469c0e0de42495577114ecaba.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/a9/ca/a9ca4076b095ac4469c0e0de42495577114ecaba.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.0647207036.html",
+        "colors": [
+          "Dark green/gray melange",
+          "White/black",
+          "Dark green",
+          "Pigeon blue/white/gray-green"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_socks"
+      },
+      {
+        "code": "1007333_group_001",
+        "name": "10-pack Socks",
+        "price": 24.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/e3/35/e3355a0d5c2342eb219bdad3188d37537ced7969.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/e3/35/e3355a0d5c2342eb219bdad3188d37537ced7969.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1007333001.html",
+        "colors": [
+          "Black",
+          "Gray melange/black",
+          "Blue/gray"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_socks"
+      },
+      {
+        "code": "0647207_group_031",
+        "name": "5-pack Socks",
+        "price": 14.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/06/88/068869487264f98594ad473d44634f545c0c397f.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/06/88/068869487264f98594ad473d44634f545c0c397f.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.0647207031.html",
+        "colors": [
+          "White",
+          "White/black",
+          "Dark green",
+          "Pigeon blue/white/gray-green"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_socks"
+      },
+      {
+        "code": "0990491_group_001",
+        "name": "20-pack Ankle Socks",
+        "price": 34.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/82/1c/821c56184d6164387ac0b6f989e5a7630d3b952c.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/82/1c/821c56184d6164387ac0b6f989e5a7630d3b952c.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.0990491001.html",
+        "colors": [
+          "Black",
+          "White"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_underwearloungewear_underwear"
+      },
+      {
+        "code": "0647207_group_035",
+        "name": "5-pack Socks",
+        "price": 14.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/b2/d4/b2d4b1116c7ec8a1e04ed63024ee65fed2207345.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/b2/d4/b2d4b1116c7ec8a1e04ed63024ee65fed2207345.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.0647207035.html",
+        "colors": [
+          "White/gray",
+          "White/black",
+          "Dark green",
+          "Pigeon blue/white/gray-green"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_socks"
+      },
+      {
+        "code": "0647207_group_047",
+        "name": "5-pack Socks",
+        "price": 14.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/ae/9b/ae9b875574225929905570422c6842a7e21174e7.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/ae/9b/ae9b875574225929905570422c6842a7e21174e7.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.0647207047.html",
+        "colors": [
+          "Yellow/red",
+          "White/black",
+          "Dark green",
+          "Pigeon blue/white/gray-green"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_socks"
+      }
+    ],
+    "Shoes": [
+      {
+        "code": "1125309_group_001",
+        "name": "Essentials: THE SNEAKER",
+        "price": 84.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/13/00/1300f368360a20cf81dda1597deb20ae218fd686.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/13/00/1300f368360a20cf81dda1597deb20ae218fd686.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1125309001.html",
+        "colors": [
+          "White",
+          "Light gray"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_shoes_sneakers"
+      },
+      {
+        "code": "1125309_group_003",
+        "name": "Essentials: THE SNEAKER",
+        "price": 84.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/22/0e/220e329e132e3160a953715fc8e4d6cc921da1a8.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/22/0e/220e329e132e3160a953715fc8e4d6cc921da1a8.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1125309003.html",
+        "colors": [
+          "Light gray",
+          "White"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_shoes_sneakers"
+      },
+      {
+        "code": "1125423_group_001",
+        "name": "Chunky Loafers",
+        "price": 49.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/96/1c/961c166b80e6460ad20745336553ec889ab62757.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/96/1c/961c166b80e6460ad20745336553ec889ab62757.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1125423001.html",
+        "colors": [
+          "Dark brown",
+          "Black"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_shoes_loafers"
+      },
+      {
+        "code": "1140554_group_001",
+        "name": "Patterned Canvas Sneakers",
+        "price": 39.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/31/df/31df68b6fdcbd30d0b0d4f8d6b2c52ce2849cd39.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/31/df/31df68b6fdcbd30d0b0d4f8d6b2c52ce2849cd39.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1140554001.html",
+        "colors": [
+          "White/Keith Haring"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_shoes"
+      },
+      {
+        "code": "1059645_group_004",
+        "name": "Canvas Sneakers",
+        "price": 34.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/ce/fb/cefbde330767d4084a4f9af673cb0ce8a8f24201.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/ce/fb/cefbde330767d4084a4f9af673cb0ce8a8f24201.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1059645004.html",
+        "colors": [
+          "Light brown",
+          "Black",
+          "Cream",
+          "Black"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_shoes_sneakers"
+      },
+      {
+        "code": "1059645_group_002",
+        "name": "Canvas Sneakers",
+        "price": 34.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/60/3e/603e8d3963486dc5d2b8eeee3b203317f29f8da7.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/60/3e/603e8d3963486dc5d2b8eeee3b203317f29f8da7.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1059645002.html",
+        "colors": [
+          "Cream",
+          "Black",
+          "Black",
+          "Light brown"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_shoes_sneakers"
+      },
+      {
+        "code": "1128417_group_002",
+        "name": "Embroidered Slip-on Shoes",
+        "price": 39.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/68/7b/687bf8cae675d29145988efdd7dd6a9dbf3b968d.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/68/7b/687bf8cae675d29145988efdd7dd6a9dbf3b968d.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1128417002.html",
+        "colors": [
+          "Black/Keith Haring"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_shoes_sneakers"
+      },
+      {
+        "code": "1125458_group_002",
+        "name": "Mule Loafers",
+        "price": 39.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/19/28/192814e1df3d18f78a3371327b34f31976e38f88.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/19/28/192814e1df3d18f78a3371327b34f31976e38f88.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1125458002.html",
+        "colors": [
+          "Dark brown",
+          "Black"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_shoes"
+      },
+      {
+        "code": "1125423_group_002",
+        "name": "Chunky Loafers",
+        "price": 49.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/b3/c8/b3c8f8e50a52426d53aa6a775175707d8381d967.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/b3/c8/b3c8f8e50a52426d53aa6a775175707d8381d967.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.1125423002.html",
+        "colors": [
+          "Black",
+          "Dark brown"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_shoes_loafers"
+      },
+      {
+        "code": "0979763_group_001",
+        "name": "Chelsea Boots",
+        "price": 49.99,
+        "pictures": {
+          "normalPicture": "https://image.hm.com/assets/hm/a5/8b/a58b39be2a53edc15f83f510c5758ff4ee1084d4.jpg",
+          "logoPicture": "https://image.hm.com/assets/hm/a5/8b/a58b39be2a53edc15f83f510c5758ff4ee1084d4.jpg"
+        },
+        "linkPdp": "https://www2.hm.com/en_us/productpage.0979763001.html",
+        "colors": [
+          "Black",
+          "Brown"
+        ],
+        "brand": "H\u0026M",
+        "categoryName": "Men",
+        "mainCategoryCode": "men_shoes_boots"
+      }
+    ]
+  }
+}
