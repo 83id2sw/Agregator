@@ -18,7 +18,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
-            <img th:src="@{/images/logo.png}" src="../static/images/logo.png" width="auto" height="40"
+            <img th:src="@{/images/logo_word.png}" src="../static/images/logo_word.png" width="auto" height="40"
                  class="d-inline-block align-top" alt=""/>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -30,16 +30,19 @@
             <ul class="navbar-nav mr-auto"></ul>
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" th:href="@{/}" href="#">home</a>
+                    <a class="nav-link" th:href="@{/}" href="#">Домой</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" th:href="@{/shop}" href="#">shop</a>
+                    <a class="nav-link sel"th:href="@{/shop/men_all/-1}" >Мужчинам<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" sec:authorize="isAnonymous()" th:href="@{/login}" href="#">login</a>
+                    <a class="nav-link sel" th:href="@{/shop/Ladies/-1}">Женщинам</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/logout}" href="#">logout</a>
+                    <a class="nav-link" sec:authorize="isAnonymous()" th:href="@{/login}" href="#">Войти</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/logout}" href="#">Выйти</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" th:href="@{/cart}" href="#">cart</a>
@@ -62,7 +65,7 @@
             <h2>$ <span th:text="${product.get('price').getAsString()}"></span></h2>
             <p th:text="${product.get('brand').getAsString()}"></p>
             <p th:text="${product.get('categoryName').getAsString()}"></p>
-            <p th:text="${product.get('color').getAsJsonArray().get(0).getAsJsonObject().getAsString()}"></p>
+            <p th:text="${product.get('colors').getAsJsonArray()}"></p>
             <a href="" th:href="@{/cart}" class="btn btn-primary">Add to favourites</a>
         </div>
     </div>
