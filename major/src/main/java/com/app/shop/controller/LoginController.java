@@ -1,7 +1,9 @@
 package com.app.shop.controller;
 
+import com.app.shop.model.Cart;
 import com.app.shop.model.Role;
 import com.app.shop.model.User;
+import com.app.shop.repository.CartRepository;
 import com.app.shop.repository.RoleRepository;
 import com.app.shop.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +20,9 @@ import java.util.List;
 
 @Controller
 public class LoginController {
+
+    @Autowired
+    CartRepository cartRepository;
     @Autowired
     private BCryptPasswordEncoder bCryptPasswordEncoder;
     @Autowired
@@ -43,6 +48,10 @@ public class LoginController {
         roles.add(roleRepository.findById(2).get());
         user.setRoles(roles);
         userRepository.save(user);
+
+        Cart cart = new Cart();
+        cart.setUser(user);
+        cartRepository.save(cart);
         request.login(user.getEmail(), password);
         return "redirect:/";
     }

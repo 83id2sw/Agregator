@@ -135,7 +135,10 @@ public class ClothesAPI implements CommandLineRunner {
                 JsonArray array = allItems.get(categories[i]).getAsJsonObject().get(productType[j]).getAsJsonArray();
                 for (int k = 0; k < array.size(); k++) {
                     if (array.get(k).getAsJsonObject().get("code").getAsString().equals(code)){
-                        return array.get(k).getAsJsonObject();
+                        JsonObject result = new JsonObject();
+                        result.add("product", array.get(k).getAsJsonObject());
+                        result.add("productType", new JsonPrimitive(productType[j]));
+                        return result;
                     }
                 }
             }

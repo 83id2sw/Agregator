@@ -1,9 +1,14 @@
 package com.app.shop.controller;
 
+import com.app.shop.global.GlobalData;
+import com.app.shop.model.User;
+import com.app.shop.repository.CartRepository;
+import com.app.shop.repository.UserRepository;
 import com.app.shop.service.CategoryService;
 import com.app.shop.service.ProductService;
 import com.app.shop.util.ClothesAPI;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,12 +17,21 @@ import org.springframework.web.bind.annotation.PathVariable;
 @Controller
 public class HomeController {
     @Autowired
+    UserRepository userRepository;
+
+    @Autowired
     CategoryService categoryService;
     @Autowired
     ProductService productService;
 
+    @Autowired
+    CartRepository cartRepository;
+
     @GetMapping({"/", "/home"})
-    public String home(Model model) {
+    public String home(@AuthenticationPrincipal User user, Model model) {
+        user = user == null? null:userRepository.findUserByEmail(user.getEmail()).get();
+        model.addAttribute("cartCount", user != null && cartRepository.findCartByUser(user) != null && cartRepository.findCartByUser(user).getProducts().size() != 0
+                ?cartRepository.findCartByUser(user).getProducts().size() : "");
         return "index";
     }
 
@@ -39,22 +53,9 @@ public class HomeController {
 
     @GetMapping("/shop/viewproduct/{code}")
     public String shopByCategory(Model model, @PathVariable String code) {
-        model.addAttribute("product", ClothesAPI.getObjectByCode(code));
+        model.addAttribute("product", ClothesAPI.getObjectByCode(code).get("product").getAsJsonObject());
         return "viewProduct";
     }
 
-//    @GetMapping("/shop/category/{id}")
-//    public String shopByCategory(Model model, @PathVariable int id) {
-//        model.addAttribute("categories", categoryService.getAllCategory());
-//        model.addAttribute("products", productService.getAllProductsByCategoryId(id));
-//
-//        return "shop";
-//    }
 
-//    @GetMapping("/shop/viewproduct/{id}")
-//    public String viewProduct(Model model, @PathVariable long id) {
-//        model.addAttribute("product", productService.getProductById(id).get());
-//
-//        return "viewProduct";
-//    }
 }
