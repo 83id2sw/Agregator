@@ -60,9 +60,11 @@ public class CartController {
     }
 
     @GetMapping("/cart")
-    public String cartGet(Model model) {
-        model.addAttribute("cartCount", GlobalData.cart.size());
-        model.addAttribute("cart", GlobalData.cart);
+    public String cartGet(Model model, @AuthenticationPrincipal User user) {
+        model.addAttribute("cart", productService.getAllProduct());
+
+//        model.addAttribute("category_name", productService.getCategoryNameByProductId())
+
         return "cart";
     }
 
