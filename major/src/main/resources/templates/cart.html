@@ -6,53 +6,38 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-
-    <title>Document</title>
+	<link th:href="@{/css/bootstrap.min.css}" href="../static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link th:href="@{/css/all.css}" href="../static/css/all.css" rel="stylesheet" type="text/css">
+    <link th:href="@{/css/style.css}" href="../static/css/style.css" rel="stylesheet" type="text/css">
+<title>Document</title>
 </head>
 <body>
-
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light" >
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img th:src="@{/images/logo_word.png}"  src="../static/images/logo_word.png" width="auto" height="40" class="d-inline-block align-top" alt=""/>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto"></ul>
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" th:href="@{/}" href="#">Домой</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link sel"th:href="@{/shop/men_all/-1}" >Мужчинам<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link sel" th:href="@{/shop/Ladies/-1}">Женщинам</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" sec:authorize="isAnonymous()" th:href="@{/login}" href="#">login</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/logout}" href="#">logout</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" th:href="@{/cart}" href="#">cart</a>
-                </li>
-                <li class="nav-item active">
-                    <span class="nav-link" th:text="${cartCount}">0</span>
-                </li>
-            </ul>
-
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid"> <a class="navbar-brand" href="#"> <img th:src="@{/images/logo_word.png}"  src="../static/images/logo_word.png" width="auto" height="25" class="d-inline-block fa-align-center image-logo" alt=""/> </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"><img class="navbar_dropdown_icon" src="../static/images/asd.png"></span> </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="form-search">
+          <form class="form-inline my-2 my-lg-0">
+            <input class="input-search" type="search" placeholder="Что ищем?" aria-label="search">
+            <button class="seacrh-btn search-btn-outline-success" type="submit">Поиск</button>
+          </form>
         </div>
+        <ul class="navbar-nav mr-auto">
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item active"> <a class="nav-link sel"th:href="@{/shop/men_all/-1}">Мужчинам<span class="sr-only">(current)</span></a> </li>
+          <li class="nav-item active"> <a class="nav-link sel" th:href="@{/shop/Ladies/-1}">Женщинам</a> </li>
+          <li class="nav-item active"> <a class="nav-link" th:href="@{/}" href="#">home</a> </li>
+<!--          <li class="nav-item active"> <a class="nav-link" th:href="@{/shop/-1}" href="#">shop</a> </li>-->
+          <li class="nav-item active"> <a class="nav-link" sec:authorize="isAnonymous()" th:href="@{/login}" href="#">login</a> </li>
+          <li class="nav-item active"> <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/logout}" href="#">logout</a> </li>
+          <li class="nav-item active"> <a class="nav-link" th:href="@{/cart}" href="#">cart</a> </li>
+          <li class="nav-item active"> <span class="nav-link" th:text="${cartCount}">0</span> </li>
+        </ul>
+      </div>
     </div>
-</nav>
+  </nav>
+	
 <main>
     <div class="container">
 
@@ -74,11 +59,9 @@
                             <div class="row mb-4" th:each="item, iStat : ${cart}">
                                 <div class="col-md-5 col-lg-3 col-xl-3">
                                     <div class="mb-3 mb-md-0">
-<!--                                        <img class="img-fluid w-100"-->
-<!--                                             th:src="@{${'/productImages/' + item.get('pictures')}}"-->
-<!--                                             src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12a.jpg" alt="Sample">-->
-<!--                                        <img class="" height="300px" width="200px"-->
-<!--                                             th:src="@{${item.get('pictures').getAsJsonObject().get('normalPicture').getAsString()}}">-->
+                                        <img class="img-fluid w-100"
+                                             th:src="@{${'/productImages/' + item.imageName}}"
+                                             src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12a.jpg" alt="Sample">
 
                                     </div>
                                 </div>
@@ -87,7 +70,8 @@
                                         <div class="d-flex justify-content-between">
                                             <div>
                                                 <h5 th:text="${item.name}">Blue denim shirt</h5>
-<!--                                                <p class="mb-2 text-uppercase small">Category: <span th:text="${item.category_name}"></span></p>-->
+                                                <p class="mb-3 text-uppercase small">Weight: <span th:text="${item.weight}"></span> grams</p>
+<!--                                                <p class="mb-2 text-uppercase small">Category: <span th:text="${item.category.name}"></span></p>-->
 
                                             </div>
 
@@ -98,7 +82,7 @@
                                                         class="fas fa-trash-alt mr-1"></i> Remove item </a>
 
                                             </div>
-<!--                                            <p class="mb-0"><span><strong>₹<span th:text="${item.price}"></span></strong></span></p>-->
+                                            <p class="mb-0"><span><strong>₹<span th:text="${item.price}"></span></strong></span></p>
                                         </div>
                                     </div>
                                 </div>
