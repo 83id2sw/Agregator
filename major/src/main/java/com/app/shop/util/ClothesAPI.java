@@ -146,6 +146,15 @@ public class ClothesAPI implements CommandLineRunner {
         return null;
     }
 
+    public static double getPriceProduct(JsonArray jsonArray) {
+        double sum = 0;
+
+        for (JsonElement je : jsonArray) {
+            sum += je.getAsJsonObject().get("price").getAsDouble();
+        }
+        return sum;
+    }
+
     @Override
     public void run(String... args) throws Exception {
         getHMCloth();

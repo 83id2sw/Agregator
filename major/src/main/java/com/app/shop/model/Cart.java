@@ -14,7 +14,7 @@ public class Cart {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
-    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @OneToOne
     private User user;
 
     @OneToMany(cascade = CascadeType.MERGE)
