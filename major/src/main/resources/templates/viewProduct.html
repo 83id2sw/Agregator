@@ -27,14 +27,14 @@
         <ul class="navbar-nav mr-auto">
         </ul>
         <ul class="navbar-nav">
-          <li class="nav-item active">
+                <li class="nav-item active">
+                    <a class="nav-link sel" th:href="@{/shop/men_all/-1}" href="#">Мужчинам<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link sel" th:href="@{/shop/Ladies/-1}" href="#">Женщинам</a>
+                </li>
+				<li class="nav-item active">
                     <a class="nav-link" th:href="@{/}" href="#">Домой</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link sel"th:href="@{/shop/men_all/-1}" >Мужчинам<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link sel" th:href="@{/shop/Ladies/-1}">Женщинам</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" sec:authorize="isAnonymous()" th:href="@{/login}" href="#">Войти</a>
