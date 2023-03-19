@@ -19,6 +19,10 @@ public class ProductService {
         productRepository.save(product);
     }
 
+    public String getCategoryNameByProductId(long id) {
+        return getProductById(id).get().getCategoryName();
+    }
+
     public void removeProductById(long id) {
         productRepository.deleteById(id);
     }

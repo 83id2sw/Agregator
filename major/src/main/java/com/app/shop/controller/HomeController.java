@@ -29,11 +29,15 @@ public class HomeController {
 
     @GetMapping({"/", "/home"})
     public String home(@AuthenticationPrincipal User user, Model model) {
-        user = user == null? null:userRepository.findUserByEmail(user.getEmail()).get();
+
+        user = user == null ?null: userRepository.findUserByEmail(user.getEmail()).get();
+
+
         model.addAttribute("cartCount", user != null && cartRepository.findCartByUser(user) != null && cartRepository.findCartByUser(user).getProducts().size() != 0
                 ?cartRepository.findCartByUser(user).getProducts().size() : "");
         return "index";
     }
+
 
     @GetMapping("/shop/{sex}/{productType}")
     public String shop(Model model,@PathVariable String sex, @PathVariable(required = false) Integer productType) {

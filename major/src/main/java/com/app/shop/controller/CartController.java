@@ -10,6 +10,7 @@ import com.app.shop.repository.UserRepository;
 import com.app.shop.service.CategoryService;
 import com.app.shop.service.ProductService;
 import com.app.shop.util.ClothesAPI;
+import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -60,11 +61,25 @@ public class CartController {
     }
 
     @GetMapping("/cart")
-    public String cartGet(Model model) {
-        model.addAttribute("cartCount", GlobalData.cart.size());
-        model.addAttribute("cart", GlobalData.cart);
+    public String cartGet(Model model, @AuthenticationPrincipal User user) {
+        user = user == null ?null: userRepository.findUserByEmail(user.getEmail()).get();
+
+        List<Product> pr = cartRepository.findCartByUser(user).getProducts();
+        JsonArray array = new JsonArray();
+
+        for (Product product : pr) {
+            array.add(ClothesAPI.getObjectByCode(product.getCode()).get("product").getAsJsonObject());
+        }
+
+        model.addAttribute("cart", array);
+        model.addAttribute("cartCount", array.size());
+        model.addAttribute("total", ClothesAPI.getPriceProduct(array));
+
+
         return "cart";
     }
+
+
 
 
 
