@@ -7,6 +7,7 @@ import com.app.shop.repository.UserRepository;
 import com.app.shop.service.CategoryService;
 import com.app.shop.service.ProductService;
 import com.app.shop.util.ClothesAPI;
+//import jdk.internal.icu.text.NormalizerBase;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
@@ -36,6 +37,16 @@ public class HomeController {
         model.addAttribute("cartCount", user != null && cartRepository.findCartByUser(user) != null && cartRepository.findCartByUser(user).getProducts().size() != 0
                 ?cartRepository.findCartByUser(user).getProducts().size() : "");
         return "index";
+    }
+
+    @GetMapping("/profile")
+    public String profile(@AuthenticationPrincipal User user, Model model) {
+        user = userRepository.findUserByEmail(user.getEmail()).get();
+
+        model.addAttribute("profile", user);
+        model.addAttribute("cartCount", cartRepository.findCartByUser(user) != null && cartRepository.findCartByUser(user).getProducts().size() != 0
+                ?cartRepository.findCartByUser(user).getProducts().size() : "");
+        return "profile";
     }
 
 

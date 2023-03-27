@@ -32,7 +32,7 @@
 <!--          <li class="nav-item active"> <a class="nav-link" th:href="@{/shop/-1}" href="#">shop</a> </li>-->
           <li class="nav-item active"> <a class="nav-link" sec:authorize="isAnonymous()" th:href="@{/login}" href="#">Войти</a> </li>
           <li class="nav-item active"> <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/logout}" href="#">Выйти</a> </li>
-          <li class="nav-item active"> <a class="nav-link" th:href="@{/cart}" href="#">cart</a> </li>
+          <li class="nav-item active"> <a class="nav-link" th:href="@{/cart}" href="#">Favourites</a> </li>
           <li class="nav-item active"> <span class="nav-link" th:text="${cartCount}">0</span> </li>
         </ul>
       </div>

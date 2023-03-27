@@ -23,6 +23,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import java.io.IOException;
 import java.security.Principal;
 import java.util.List;
+import java.util.Objects;
 
 @Controller
 public class CartController {
@@ -79,8 +80,24 @@ public class CartController {
         return "cart";
     }
 
+    @GetMapping("/cart/removeItem/{code}")
+    public String removeItem(@PathVariable String code, @AuthenticationPrincipal User user) {
+        Cart cart = cartRepository.findCartByUser(userRepository.findUserByEmail(user.getEmail()).get());
+        List<Product> productsFromCart = cart.getProducts();
 
 
+        int index = 0;
+        for (int i = 0; i < productsFromCart.size(); ++i){
+            if (Objects.equals(productsFromCart.get(i).getCode(), code)) {
+                index = i;
+            }
+        }
 
+        productsFromCart.remove(index);
+        cartRepository.save(cart);
+
+
+        return "redirect:/cart";
+    }
 
 }

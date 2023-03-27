@@ -94,7 +94,7 @@
                                         </div>
                                         <div class="mt-5 d-flex justify-content-between align-items-center">
                                             <div>
-                                                <a href="#!" th:href="@{/cart/removeItem/{id}(id=${product.get('code').getAsString()})}"  type="button" class="card-link-secondary small text-uppercase mr-3"><i
+                                                <a href="#!" th:href="@{/cart/removeItem/{code}(code=${product.get('code').getAsString()})}"  type="button" class="card-link-secondary small text-uppercase mr-3"><i
                                                         class="fas fa-trash-alt mr-1"></i> Remove item </a>
                                                 <a href="#" th:href="@{/shop/viewproduct/{id}(id=${product.get('code').getAsString()})}" class="btn btn-warning">View Product</a>
                                                 <a href="#" th:href="@{${product.get('linkPdp').getAsString()}}" class="btn btn-primary">Go to shop</a>
