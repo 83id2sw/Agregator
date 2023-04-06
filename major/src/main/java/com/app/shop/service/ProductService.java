@@ -1,6 +1,9 @@
 package com.app.shop.service;
 
+import com.app.shop.model.Category;
 import com.app.shop.model.Product;
+import com.app.shop.repository.CartRepository;
+import com.app.shop.repository.CategoryRepository;
 import com.app.shop.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,6 +15,10 @@ import java.util.Optional;
 public class ProductService {
     @Autowired
     ProductRepository productRepository;
+
+    @Autowired
+    CategoryRepository categoryRepository;
+
     public List<Product> getAllProduct() {
         return productRepository.findAll();
     }
@@ -19,20 +26,23 @@ public class ProductService {
         productRepository.save(product);
     }
 
-    public String getCategoryNameByProductId(long id) {
-        return getProductById(id).get().getCategoryName();
+
+    public List<Product> findAllBySexAndCategory(String sex, Category category){
+        return productRepository.findAllBySexAndCategory(sex, category);
+    }
+    public List<Product> findAllBySex(String sex){
+        return productRepository.findAllBySex(sex);
     }
 
-    public void removeProductById(long id) {
-        productRepository.deleteById(id);
+    public Product findProductByCode(String code){
+        return productRepository.findProductByCode(code);
     }
 
-    public Optional<Product> getProductById(long id) {
-        return productRepository.findById(id);
-    }
-
-    public List<Product> getAllProductsByCategoryId(int id) {
-        return productRepository.findAllByCategoryId(id);
+    public List<Product> searchAllByName(String keyword, String sex, Integer category) {
+        if (category == -1){
+            return productRepository.searchAllByNameAndSex(keyword, sex);
+        }
+        return productRepository.searchAllByNameAndSexCAndCategory(keyword, sex, categoryRepository.findCategoryById(category));
     }
 
 }

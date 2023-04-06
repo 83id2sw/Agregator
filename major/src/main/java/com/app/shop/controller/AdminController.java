@@ -55,9 +55,9 @@ public class AdminController {
 
     @GetMapping("/admin/categories/update/{id}")
     public String updateCategory(@PathVariable int id, Model model) {
-        Optional<Category> category = categoryService.getCategoryById(id);
-        if (category.isPresent()) {
-            model.addAttribute("category", category.get());
+        Category category = categoryService.getCategoryById(id);
+        if (category != null) {
+            model.addAttribute("category", category);
             return "categoriesAdd";
         } else {
             return "404";

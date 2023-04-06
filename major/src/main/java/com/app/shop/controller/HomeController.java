@@ -11,7 +11,9 @@ import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class HomeController {
@@ -51,14 +53,12 @@ public class HomeController {
     @GetMapping("/shop/{sex}/{productType}")
     public String shop(Model model,@PathVariable String sex, @PathVariable(required = false) Integer productType) {
         model.addAttribute("categories", categoryService.getAllCategory());
-        model.addAttribute("products", productService.getAllProduct());
         model.addAttribute("sex", sex);
+        model.addAttribute("productType", productType);
         if (productType == -1) {
-            model.addAttribute("newProducts", ClothesAPI.getAllArrays(sex));
+            model.addAttribute("newProducts", productService.findAllBySex(sex));
         } else {
-            model.addAttribute("newProducts", ClothesAPI.allItems.get(sex).getAsJsonObject().get(
-                    categoryService.getCategoryById(productType).get().getName()
-            ));
+            model.addAttribute("newProducts", productService.findAllBySexAndCategory(sex, categoryService.getCategoryById(productType)));
         }
 
         return "shop";
@@ -66,8 +66,18 @@ public class HomeController {
 
     @GetMapping("/shop/viewproduct/{code}")
     public String shopByCategory(Model model, @PathVariable String code) {
-        model.addAttribute("product", ClothesAPI.getObjectByCode(code).get("product").getAsJsonObject());
+        model.addAttribute("product", productService.findProductByCode(code));
         return "viewProduct";
+    }
+
+    @GetMapping("/shopSearch/{sex}/{productType}")
+    public String searchShop(Model model, @PathVariable String sex,
+                             @PathVariable Integer productType, @ModelAttribute(name = "search") String stringSearch) {
+        model.addAttribute("categories", categoryService.getAllCategory());
+        model.addAttribute("sex", sex);
+        model.addAttribute("productType", productType);
+        model.addAttribute("newProducts", productService.searchAllByName(stringSearch, sex, productType));
+        return "shop";
     }
 
 }
