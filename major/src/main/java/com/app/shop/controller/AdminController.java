@@ -1,6 +1,5 @@
 package com.app.shop.controller;
 
-import com.app.shop.dto.ProductDTO;
 import com.app.shop.model.Category;
 import com.app.shop.model.Product;
 import com.app.shop.service.CategoryService;
@@ -70,58 +69,6 @@ public class AdminController {
     public String products(Model model) {
         model.addAttribute("products", productService.getAllProduct());
         return "products";
-    }
-
-    @GetMapping("/admin/products/add")
-    public String productsAddGet(Model model) {
-        model.addAttribute("productsDTO", new ProductDTO());
-        model.addAttribute("categories", categoryService.getAllCategory());
-        return "productsAdd";
-    }
-
-    @PostMapping("/admin/products/add")
-    public String productAddPost(@ModelAttribute("productsDTO")ProductDTO productsDTO) throws IOException {
-        Product product = new Product();
-        product.setId(productsDTO.getId());
-        product.setName(productsDTO.getName());
-        product.setCategory(categoryService.getCategoryById(productsDTO.getCategoryId()).get());
-//        product.setPrice(productsDTO.getPrice());
-//        product.setDescription(productsDTO.getDescription());
-//        String imageUUID;
-//        if (!file.isEmpty()) {
-//            imageUUID = file.getOriginalFilename();
-//            Path fileNameAndPath = Paths.get(uploadDir, imageUUID);
-//            Files.write(fileNameAndPath, file.getBytes());
-//        } else {
-//            imageUUID = imgName;
-//        }
-//        product.setImageName(imageUUID);
-        productService.addProduct(product);
-
-        return "redirect:/admin/products";
-    }
-
-    @GetMapping("/admin/product/delete/{id}")
-    public String deleteProduct(@PathVariable long id) {
-        productService.removeProductById(id);
-        return "redirect:/admin/products";
-    }
-
-    @GetMapping("/admin/product/update/{id}")
-    public String updateProductGet(@PathVariable long id, Model model) {
-        Product product = productService.getProductById(id).get();
-        ProductDTO productDTO = new ProductDTO();
-        productDTO.setId(product.getId());
-        productDTO.setName(product.getName());
-        productDTO.setCategoryId(product.getCategory().getId());
-//        productDTO.setPrice(product.getPrice());
-//        productDTO.setDescription(product.getDescription());
-//        productDTO.setImageName(product.getImageName());
-
-        model.addAttribute("categories", categoryService.getAllCategory());
-        model.addAttribute("productsDTO", productDTO);
-
-        return "productsAdd";
     }
 
 

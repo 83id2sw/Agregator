@@ -1,7 +1,6 @@
 package com.app.shop.controller;
 
-import com.app.shop.dto.ProductDTO;
-import com.app.shop.global.GlobalData;
+
 import com.app.shop.model.Cart;
 import com.app.shop.model.Product;
 import com.app.shop.model.User;

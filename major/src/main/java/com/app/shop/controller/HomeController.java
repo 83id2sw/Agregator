@@ -1,13 +1,11 @@
 package com.app.shop.controller;
 
-import com.app.shop.global.GlobalData;
 import com.app.shop.model.User;
 import com.app.shop.repository.CartRepository;
 import com.app.shop.repository.UserRepository;
 import com.app.shop.service.CategoryService;
 import com.app.shop.service.ProductService;
 import com.app.shop.util.ClothesAPI;
-//import jdk.internal.icu.text.NormalizerBase;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
@@ -71,6 +69,5 @@ public class HomeController {
         model.addAttribute("product", ClothesAPI.getObjectByCode(code).get("product").getAsJsonObject());
         return "viewProduct";
     }
-
 
 }
