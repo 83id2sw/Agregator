@@ -20,7 +20,7 @@ body {
 }
 
 .top_nav_l1 {
-	width: 70%;
+	width: 73%;
 	margin: auto;
 	display: flex;
 }
@@ -266,12 +266,43 @@ body {
     width: 50vw;
 }
 
+.create-look-page {
+	background: grey;
+}
+
 @media (min-width: 500px) {
   foot {
     grid-auto-flow: column;
   }
 }
+
+.promo_prompt {
+	margin-top: 20px;
+	padding-bottom: -40px;
+	width: 50vh;
+	background-color: black;
+	text-align: center;
+	border: 3px solid white;
+	color: white;
+}
+
+.promo_box {
+	margin: auto 0;
+}
+
+.promo_img {
+	margin-right: 10px;
+	width: 264px;
+	height: 396px;
+	border: 4px solid black;
+}
+
+.promo_nav:hover {
+	background-color: white;
+	color: black;
+}
 /*
+
 
 .container-back {
 	margin-top: -40%;
