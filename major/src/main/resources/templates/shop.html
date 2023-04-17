@@ -19,8 +19,8 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="form-search">
-          <form class="form-inline my-2 my-lg-0">
-            <input class="input-search" type="search" placeholder="Что ищем?" aria-label="search">
+          <form class="form-inline my-2 my-lg-0" th:action="@{/shopSearch/{sex}/{productType}(productType=${productType}, sex=${sex})}" th:method="GET">
+            <input class="input-search" type="search" name="search" placeholder="Что ищем?" aria-label="search">
             <button class="seacrh-btn search-btn-outline-success" type="submit">Поиск</button>
           </form>
         </div>
@@ -31,9 +31,9 @@
             <li class="nav-item active"> <a class="nav-link sel" th:href="@{/shop/Ladies/-1}">Женщинам</a> </li>
           <li class="nav-item active"> <a class="nav-link" th:href="@{/}" href="#">home</a> </li>
 <!--          <li class="nav-item active"> <a class="nav-link" th:href="@{/shop}" href="#">shop</a> </li>-->
-          <li class="nav-item active"> <a class="nav-link" sec:authorize="isAnonymous()" th:href="@{/login}" href="#">login</a> </li>
-          <li class="nav-item active"> <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/logout}" href="#">logout</a> </li>
-          <li class="nav-item active"> <a class="nav-link" th:href="@{/cart}" href="#">cart</a> </li>
+          <li class="nav-item active"> <a class="nav-link" sec:authorize="isAnonymous()" th:href="@{/login}" href="#">Login</a> </li>
+          <li class="nav-item active"> <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/logout}" href="#">Logout</a> </li>
+          <li class="nav-item active"> <a class="nav-link" th:href="@{/cart}" href="#">Favourites</a> </li>
           <li class="nav-item active"> <span class="nav-link" th:text="${cartCount}">0</span> </li>
         </ul>
       </div>
@@ -55,16 +55,16 @@
             <div class="card" style="margin-top: 20px" th:each="product : ${newProducts}">
                 <div style="padding-top: 20px" class="row no-gutters">
                     <div class="col-sm-5 d-flex justify-content-center">
-                        <img class="" height="220px" width="150px" th:src="@{${product.get('pictures').getAsJsonObject().get('logoPicture').getAsString()}}">
+                        <img class="" height="220px" width="150px" th:src="@{${product.logoPicture}}">
                     </div>
                     <div class="col-sm-7 d-flex justify-content-center">
                         <div class="card-body">
-                            <h5 class="card-title" th:text="${product.get('name').getAsString()}">Name</h5>
-                            <h4>$ <span th:text="${product.get('price')}"></span></h4>
-                            <p th:text="${product.get('brand').getAsString()}" >Brand</p>
-                            <p th:text="${product.get('categoryName').getAsString()}" >Sex</p>
-                            <a href="#" th:href="@{/shop/viewproduct/{id}(id=${product.get('code').getAsString()})}" class="btn btn-warning">View Product</a>
-                            <a href="#" th:href="@{${product.get('linkPdp').getAsString()}}" class="btn btn-primary">Go to shop</a>
+                            <h5 class="card-title" th:text="${product.name}">Name</h5>
+                            <h4>$ <span th:text="${product.price}"></span></h4>
+                            <p th:text="${product.brand}" >Brand</p>
+                            <p th:text="${product.categoryName}" >Sex</p>
+                            <a href="#" th:href="@{/shop/viewproduct/{id}(id=${product.code})}" class="btn btn-warning">View Product</a>
+                            <a href="#" th:href="@{${product.linkPdp}}" class="btn btn-primary">Go to shop</a>
                         </div>
                     </div>
                 </div>

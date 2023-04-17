@@ -1,6 +1,10 @@
 package com.app.shop.util;
 
+import com.app.shop.model.Product;
+import com.app.shop.repository.CategoryRepository;
+import com.app.shop.repository.ProductRepository;
 import com.google.gson.*;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -19,17 +23,12 @@ import javax.net.ssl.HttpsURLConnection;
 public class ClothesAPI implements CommandLineRunner {
     public static JsonObject allItems = new JsonObject();
 
+    @Autowired
+    ProductRepository productRepository;
 
-    public static JsonArray getAllArrays(String category) {
-        String [] productType = new String[] {"Hat", "Pants", "Shirt", "Socks", "Shoes"};
+    @Autowired
+    CategoryRepository categoryRepository;
 
-        JsonArray resultJSONArray = new JsonArray();
-        for (int i = 0; i < 5; i ++){
-            resultJSONArray.addAll(allItems.get(category).getAsJsonObject().get(productType[i]).getAsJsonArray());
-        }
-
-        return resultJSONArray;
-    }
 
     public static JsonObject prettify(String json_text) {
         JsonParser parser = new JsonParser();
@@ -43,120 +42,75 @@ public class ClothesAPI implements CommandLineRunner {
 
     public void getHMCloth() throws IOException {
 
-//        String [] categories = new String[]{"Ladies", "men_all"};
-//        String [] productType = new String[] {"Hat", "Pants", "Shirt", "Socks", "Shoes"};
-//
-//        for (int j = 0; j < 2; j++) {
-//            JsonObject itemsCategories = new JsonObject();
-//            for (int s = 0; s < 5; s++) {
-//                URL url = new URL("https://apidojo-hm-hennes-mauritz-v1.p.rapidapi.com/products/list?country=us&lang=en&currentpage=0&pagesize=10&categories=" + categories[j] + "&productTypes=" + productType[s]);
-//
-//                // Open the connection.
-//                HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
-//                connection.setRequestProperty("X-RapidAPI-Key", "f038a88304msh80e246d7a73f86dp14b10bjsnffb88e99baca");
-//                connection.setRequestProperty("X-Rapidapi-Host", "apidojo-hm-hennes-mauritz-v1.p.rapidapi.com");
-//
-//                // Receive the JSON response body.
-//                InputStream stream = connection.getInputStream();
-//                String response = new Scanner(stream).useDelimiter("\\A").next();
-//
-//                // Construct the result object.
-//                SearchResults results = new SearchResults(new HashMap<String, String>(), response);
-//
-//                // Extract Bing-related HTTP headers.
-//                Map<String, List<String>> headers = connection.getHeaderFields();
-//                for (String header : headers.keySet()) {
-//                    if (header == null) continue;      // may have null key
-//                    if (header.startsWith("BingAPIs-") || header.startsWith("X-MSEdge-")) {
-//                        results.relevantHeaders.put(header, headers.get(header).get(0));
-//                    }
-//                }
-//                stream.close();
-//
-//
-//                JsonObject allResults = prettify(results.jsonResponse);
-//
-//                JsonArray elem = allResults.get("results").getAsJsonArray();
-//
-//                JsonArray itemsForProductType = new JsonArray();
-//
-//
-//                for (int i = 0; i < elem.size(); i++) {
-//                    JsonElement current = elem.get(i);
-//                    JsonObject newProduct = new JsonObject();
-//                    newProduct.add("code", current.getAsJsonObject().get("code"));
-//                    newProduct.add("name", current.getAsJsonObject().get("name"));
-//                    newProduct.add("price", current.getAsJsonObject().get("whitePrice").getAsJsonObject().get("value"));
-//
-//                    JsonObject help = new JsonObject();
-//                    help.add("normalPicture", current.getAsJsonObject().get("defaultArticle").getAsJsonObject().get("normalPicture").getAsJsonArray().get(0).getAsJsonObject().get("baseUrl"));
-//                    help.add("logoPicture", current.getAsJsonObject().get("defaultArticle").getAsJsonObject().get("logoPicture").getAsJsonArray().get(0).getAsJsonObject().get("baseUrl"));
-//                    newProduct.add("pictures", help);
-//
-//
-//                    newProduct.add("linkPdp", new JsonPrimitive("https://www2.hm.com" + current.getAsJsonObject().get("linkPdp").toString().replace("\"", "")));
-//                    newProduct.add("colors", current.getAsJsonObject().get("articleColorNames"));
-//                    newProduct.add("brand", current.getAsJsonObject().get("brandName"));
-//                    newProduct.add("categoryID", current.getAsJsonObject().get(""));
-//                    newProduct.add("categoryName", current.getAsJsonObject().get("categoryName"));
-//                    newProduct.add("mainCategoryCode", current.getAsJsonObject().get("mainCategoryCode"));
-//
-//                    itemsForProductType.add(newProduct);
-//                }
-//                itemsCategories.add(productType[s], itemsForProductType);
-//
-//            }
-//
-//
-//            allItems.add(categories[j], itemsCategories);
-//        }
-//        Gson gson = new GsonBuilder().setPrettyPrinting().create();
-//        System.out.println(gson.toJson(allItems));
-//        System.out.println(allItems.size());
+        String [] categories = new String[]{"Ladies", "men_all"};
+        String [] productType = new String[] {"Hat", "Pants", "Shirt", "Socks", "Shoes"};
 
-        Gson gson = new Gson();
+        for (int j = 0; j < 2; j++) {
+            for (int s = 0; s < 5; s++) {
+                URL url = new URL("https://apidojo-hm-hennes-mauritz-v1.p.rapidapi.com/products/list?country=us&lang=en&currentpage=0&pagesize=10&categories=" + categories[j] + "&productTypes=" + productType[s]);
 
-        // create a reader
-        Reader reader = Files.newBufferedReader(Paths.get("D:/JavaProjects/AgregatorGit/major/src/main/java/com/app/shop/util/shopReq.json"));
+                // Open the connection.
+                HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
+                connection.setRequestProperty("X-RapidAPI-Key", "f038a88304msh80e246d7a73f86dp14b10bjsnffb88e99baca");
+                connection.setRequestProperty("X-Rapidapi-Host", "apidojo-hm-hennes-mauritz-v1.p.rapidapi.com");
 
-        // convert a JSON string to a Book object
-        allItems = gson.fromJson(reader, JsonObject.class);
+                // Receive the JSON response body.
+                InputStream stream = connection.getInputStream();
+                String response = new Scanner(stream).useDelimiter("\\A").next();
+
+                // Construct the result object.
+                SearchResults results = new SearchResults(new HashMap<String, String>(), response);
+
+                // Extract Bing-related HTTP headers.
+                Map<String, List<String>> headers = connection.getHeaderFields();
+                for (String header : headers.keySet()) {
+                    if (header == null) continue;      // may have null key
+                    if (header.startsWith("BingAPIs-") || header.startsWith("X-MSEdge-")) {
+                        results.relevantHeaders.put(header, headers.get(header).get(0));
+                    }
+                }
+                stream.close();
+
+
+                JsonObject allResults = prettify(results.jsonResponse);
+
+                JsonArray elem = allResults.get("results").getAsJsonArray();
+
+
+                for (int i = 0; i < elem.size(); i++) {
+                    JsonElement current = elem.get(i);
+                    Product newProduct = new Product();
+
+
+                    newProduct.setCode(current.getAsJsonObject().get("code").getAsString());
+                    newProduct.setName(current.getAsJsonObject().get("name").getAsString());
+                    newProduct.setPrice(current.getAsJsonObject().get("whitePrice").getAsJsonObject().get("value").getAsString());
+                    newProduct.setNormalPicture(current.getAsJsonObject().get("defaultArticle").getAsJsonObject().get("normalPicture").getAsJsonArray().get(0).getAsJsonObject().get("baseUrl").getAsString());
+                    newProduct.setLogoPicture(current.getAsJsonObject().get("defaultArticle").getAsJsonObject().get("logoPicture").getAsJsonArray().get(0).getAsJsonObject().get("baseUrl").getAsString());
+                    newProduct.setLinkPdp("https://www2.hm.com" + current.getAsJsonObject().get("linkPdp").toString().replace("\"", ""));
+                    newProduct.setColors( current.getAsJsonObject().get("articleColorNames").getAsJsonArray().toString());
+                    newProduct.setBrand( current.getAsJsonObject().get("brandName").getAsString());
+                    newProduct.setCategoryName(current.getAsJsonObject().get("categoryName").getAsString());
+                    newProduct.setMainCategoryCode(current.getAsJsonObject().get("mainCategoryCode").getAsString());
+                    newProduct.setSex(categories[j]);
+                    newProduct.setCategory(categoryRepository.findCategoryByName(productType[s]));
+
+                    productRepository.save(newProduct);
+
+                }
+
+            }
+
+        }
 
         System.out.println("Ready");
 
 
     }
 
-    public static JsonObject getObjectByCode(String code){
-        String [] categories = new String[]{"Ladies", "men_all"};
-        String [] productType = new String[] {"Hat", "Pants", "Shirt", "Socks", "Shoes"};
-        for (int i = 0; i < 2; i++) {
-            for (int j = 0; j < 5; j++) {
-                JsonArray array = allItems.get(categories[i]).getAsJsonObject().get(productType[j]).getAsJsonArray();
-                for (int k = 0; k < array.size(); k++) {
-                    if (array.get(k).getAsJsonObject().get("code").getAsString().equals(code)){
-                        JsonObject result = new JsonObject();
-                        result.add("product", array.get(k).getAsJsonObject());
-                        result.add("productType", new JsonPrimitive(productType[j]));
-                        return result;
-                    }
-                }
-            }
-        }
-        return null;
-    }
-
-    public static double getPriceProduct(JsonArray jsonArray) {
-        double sum = 0;
-
-        for (JsonElement je : jsonArray) {
-            sum += je.getAsJsonObject().get("price").getAsDouble();
-        }
-        return sum;
-    }
 
     @Override
     public void run(String... args) throws Exception {
-        getHMCloth();
+        // getHMCloth();
     }
 }

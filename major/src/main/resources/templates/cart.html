@@ -77,7 +77,7 @@
                                 <div class="col-md-5 col-lg-3 col-xl-3">
                                     <div class="mb-3 mb-md-0">
                                         <img class="img-fluid w-100"
-                                             th:src="@{${product.get('pictures').getAsJsonObject().get('logoPicture').getAsString()}}"
+                                             th:src="@{${product.logoPicture}}"
                                              src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12a.jpg" alt="Sample">
 
                                     </div>
@@ -86,21 +86,21 @@
                                     <div>
                                         <div class="d-flex justify-content-between">
                                             <div>
-                                                <h5 th:text="${product.get('name').getAsString()}">Blue denim shirt</h5>
-                                                <p class="mb-2 text-uppercase small">Category: <span th:text="${product.get('categoryName').getAsString()}"></span></p>
-                                                <p class="mb-2 text-uppercase small">Brand: <span th:text="${product.get('brand').getAsString()}"></span></p>
+                                                <h5 th:text="${product.name}">Blue denim shirt</h5>
+                                                <p class="mb-2 text-uppercase small">Category: <span th:text="${product.categoryName}"></span></p>
+                                                <p class="mb-2 text-uppercase small">Brand: <span th:text="${product.brand}"></span></p>
                                             </div>
 
                                         </div>
                                         <div class="mt-5 d-flex justify-content-between align-items-center">
                                             <div>
-                                                <a href="#!" th:href="@{/cart/removeItem/{id}(id=${product.get('code').getAsString()})}"  type="button" class="card-link-secondary small text-uppercase mr-3"><i
+                                                <a href="#!" th:href="@{/cart/removeItem/{code}(code=${product.code})}"  type="button" class="card-link-secondary small text-uppercase mr-3"><i
                                                         class="fas fa-trash-alt mr-1"></i> Remove item </a>
-                                                <a href="#" th:href="@{/shop/viewproduct/{id}(id=${product.get('code').getAsString()})}" class="btn btn-warning">View Product</a>
-                                                <a href="#" th:href="@{${product.get('linkPdp').getAsString()}}" class="btn btn-primary">Go to shop</a>
+                                                <a href="#" th:href="@{/shop/viewproduct/{id}(id=${product.code})}" class="btn btn-warning">View Product</a>
+                                                <a href="#" th:href="@{${product.linkPdp}}" class="btn btn-primary">Go to shop</a>
 
                                             </div>
-                                            <p class="mb-0"><span><strong>$<span th:text="${product.get('price')}"></span></strong></span></p>
+                                            <p class="mb-0"><span><strong>$<span th:text="${product.price}"></span></strong></span></p>
                                         </div>
                                     </div>
                                 </div>

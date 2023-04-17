@@ -14,8 +14,6 @@
     <title>Document</title>
 </head>
 <body>
-
-
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid"> <a class="navbar-brand" href="#"> <img th:src="@{/images/logo_word.png}"  src="../static/images/logo_word.png" width="auto" height="25" class="d-inline-block fa-align-center image-logo" alt=""/> </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
@@ -33,9 +31,9 @@
             <li class="nav-item active"> <a class="nav-link sel" th:href="@{/shop/Ladies/-1}">Женщинам</a> </li>
           <li class="nav-item active"> <a class="nav-link" th:href="@{/}" href="#">home</a> </li>
 <!--          <li class="nav-item active"> <a class="nav-link" th:href="@{/shop}" href="#">shop</a> </li>-->
-          <li class="nav-item active"> <a class="nav-link" sec:authorize="isAnonymous()" th:href="@{/login}" href="#">login</a> </li>
-          <li class="nav-item active"> <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/logout}" href="#">logout</a> </li>
-          <li class="nav-item active"> <a class="nav-link" th:href="@{/cart}" href="#">cart</a> </li>
+          <li class="nav-item active"> <a class="nav-link" sec:authorize="isAnonymous()" th:href="@{/login}" href="#">Login</a> </li>
+          <li class="nav-item active"> <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/logout}" href="#">Logout</a> </li>
+          <li class="nav-item active"> <a class="nav-link" th:href="@{/cart}" href="#">Favourites</a> </li>
           <li class="nav-item active"> <span class="nav-link" th:text="${cartCount}">0</span> </li>
         </ul>
       </div>

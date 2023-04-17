@@ -43,7 +43,7 @@
                     <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/logout}" href="#">Выйти</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" th:href="@{/cart}" href="#">cart</a>
+                    <a class="nav-link" th:href="@{/cart}" href="#">Favourites</a>
                 </li>
                 <li class="nav-item active">
                     <span class="nav-link" th:text="${cartCount}"></span>
@@ -58,16 +58,16 @@
 <div class="container mt-5 products">
     <div class="row">
         <div class="col-sm-5 d-flex justify-content-center">
-            <img class="" height="600px" width="400px" th:src="@{${product.get('pictures').getAsJsonObject().get('normalPicture').getAsString()}}">
+            <img class="" height="600px" width="400px" th:src="@{${product.normalPicture}}">
         </div>
         <div class="col-sm-7 mt-5">
-            <h2 th:text="${product.get('name').getAsString()}"></h2>
-            <h2>$ <span th:text="${product.get('price').getAsString()}"></span></h2>
-            <p th:text="${product.get('brand').getAsString()}"></p>
-            <p th:text="${product.get('categoryName').getAsString()}"></p>
-            <p th:text="${product.get('colors').getAsJsonArray()}"></p>
+            <h2 th:text="${product.name}"></h2>
+            <h2>$ <span th:text="${product.price}"></span></h2>
+            <p th:text="${product.brand}"></p>
+            <p th:text="${product.categoryName}"></p>
+            <p th:text="${product.colors}"></p>
 <!--            <a href="" th:href="@{/addToCart/{productType}(productType=${category.id}, sex=${sex})}" class="btn btn-primary">Add to favourites</a>-->
-            <a href="" th:href="@{/addToCart/{id}(id=${product.get('code').getAsString()})}" class="btn btn-primary">Add to favourites</a>
+            <a href="" th:href="@{/addToCart/{id}(id=${product.code})}" class="btn btn-primary">Add to favourites</a>
         </div>
     </div>
 </div>
