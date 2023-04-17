@@ -59,7 +59,7 @@ public class CartController {
         List<Product> cart = cartRepository.findCartByUser(userRepository.findUserByEmail(user.getEmail()).get()).getProducts();
         model.addAttribute("cart", cart);
         model.addAttribute("cartCount", cart.size());
-        model.addAttribute("total", cart.stream().map(i -> Double.parseDouble(i.getPrice())).mapToDouble(Double::intValue).sum());
+        model.addAttribute("total", cart.stream().map(i -> Double.parseDouble(i.getPrice())).mapToDouble(Double::doubleValue).sum());
 
 
         return "cart";
