@@ -126,6 +126,7 @@ body {
 
 
 .search-btn-outline-success {
+	transition: 0.6s;	
 	justify-content: flex-end;
 	color: white;
 	background-color: black;
@@ -154,26 +155,12 @@ body {
 
 .nav-link {
 	color: #228E5D;
+	transition: 0.6s;
 }
 
 .nav-link:hover, .nav-link:focus {
 	color: white;
 }
-
-.top-content .carousel-item {
-    height: 100vh;
-    min-height: 400px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.carousel {
-	position: relative;
-	margin: auto;
-	z-index: 5;
-	border: 3px solid white;
-}
-
 
 
 .heading-carousel {
@@ -183,19 +170,7 @@ body {
 .p_carousel {
 	color: #228E5D;
 }
-
-@media screen and (max-width: 800px){   
-    #c1_big_img{      
-        content:url("../images/asd.png");
-    } 
-	 #c1_big_img{      
-        content:url("../images/asd.png");
-    } 
-	 #c1_big_img{      
-        content:url("../images/asd.png");
-    } 
-}
-
+	
 .card-body-new {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
@@ -241,6 +216,7 @@ body {
 	color: white;
 	text-decoration: none;
 	box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
+	transition: 0.5s;
 }
 
 .footer-text:hover {
@@ -295,6 +271,22 @@ body {
 	width: 264px;
 	height: 396px;
 	border: 4px solid black;
+	transition: 0.6s;
+}
+
+.promo_img:hover {
+	border: 4px solid #228e5d;
+}
+
+.promo_nav {
+	margin: auto;
+	margin-top: 20px;
+	padding-bottom: -40px;
+	width: 50vh;
+	background-color: black;
+	text-align: center;
+	border: 3px solid white;
+	color: white;
 }
 
 .promo_nav:hover {
