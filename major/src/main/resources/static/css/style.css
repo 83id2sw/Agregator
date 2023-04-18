@@ -3,6 +3,7 @@
 @import url("../webfonts/Tektur_Regular/stylesheet.css");
 /* CSS Document */
 body {
+	min-height: 100vh;
     background: url(../images/logo_grid_4_test.png) no-repeat center center fixed; 
 	-webkit-background-size: 100%; 
     -moz-background-size: 100%; 
@@ -15,8 +16,9 @@ body {
     font-family: "Tektur Medium";
 }
 
+
 .navbar_dropdown_icon {
-	width: 40px;
+	width: auto;
 }
 
 .top_nav_l1 {
@@ -71,7 +73,9 @@ body {
 	.navbar {
 		height: 110px;
 	}
-
+	.nav_mobile {
+		width: 300px;
+	}
 	.search-btn-outline-success {
 		width: 0px;
 		display: none;
@@ -84,6 +88,22 @@ body {
 		position: relative;
 		text-align: center;
 		width: 100%;
+	}
+	.promo_prompt {
+		width: 90vw;
+		margin-bottom: 10vh;
+	}
+	.promo_img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 15px;
+	}
+	h1 {
+	  font-size: 18px;
+	}
+	.site-footer {
+		margin-top: 20px;
 	}
 }
 
@@ -162,14 +182,6 @@ body {
 	color: white;
 }
 
-
-.heading-carousel {
-    color: #228E5D;	
-}
-
-.p_carousel {
-	color: #228E5D;
-}
 	
 .card-body-new {
     -ms-flex: 1 1 auto;
@@ -193,8 +205,8 @@ body {
 .site-footer {
 	border-top: solid white 4px;
 	list-style-type: none;
-	position: absolute;
- 	bottom: 0;
+    bottom: 0;
+	position: fixed;
     margin-top: 1%;
     display: flex;
     height: 8vh;
@@ -207,7 +219,7 @@ body {
 .foot {
 	display: inline-grid;
 	grid-auto-flow: row;
-	grid-gap: 24px;
+	grid-gap: 5px;
 	justify-items: center;
 	margin: auto;
 }
@@ -223,7 +235,6 @@ body {
 	color: #DBDBDB;
 	box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
 }
-
 
 .look_preview_left {
 	background: linear-gradient(#228E5D, #FFFFFF);
@@ -253,9 +264,10 @@ body {
 }
 
 .promo_prompt {
+	transition: 0.6s;
 	margin-top: 20px;
 	padding-bottom: -40px;
-	width: 50vh;
+	width: 50vw;
 	background-color: black;
 	text-align: center;
 	border: 3px solid white;
@@ -263,30 +275,27 @@ body {
 }
 
 .promo_box {
+	margin: 0 auto;
+	justify-content: center;
+}
+
+.navbar_dropdown_icon {
 	margin: auto 0;
 }
 
 .promo_img {
-	margin-right: 10px;
 	width: 264px;
 	height: 396px;
 	border: 4px solid black;
 	transition: 0.6s;
 }
 
-.promo_img:hover {
+.promo_img:hover, .promo_img:focus {
 	border: 4px solid #228e5d;
 }
 
 .promo_nav {
-	margin: auto;
-	margin-top: 20px;
-	padding-bottom: -40px;
-	width: 50vh;
 	background-color: black;
-	text-align: center;
-	border: 3px solid white;
-	color: white;
 }
 
 .promo_nav:hover {
