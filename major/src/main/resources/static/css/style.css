@@ -304,6 +304,7 @@ body {
 }
 
 .create-look-page {
+	background: none;
 	margin: 0 auto;
 	text-align: center;
 	display: block;
@@ -311,13 +312,13 @@ body {
 }
 
 .items-placeholder {
-	width: 40%;
+	width: 45%;
 	background-color: white;
 	display: inline-block;
 }
 
 .info-placeholder {
-	width: 50%;
+	width: 45%;
 	background-color: aqua;
 	display: inline-block;
 }
