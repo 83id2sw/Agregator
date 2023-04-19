@@ -22,7 +22,7 @@ body {
 }
 
 .top_nav_l1 {
-	width: 73%;
+	width: 70%;
 	margin: auto;
 	display: flex;
 }
@@ -44,7 +44,7 @@ body {
 	color: #A8A8A8;
 	white-space: nowrap;
 	font-size: 15px;
-	padding-left: 100vmin;
+	padding-left: 65%;
 }
 
 .mobile_auth {
@@ -309,18 +309,42 @@ body {
 	text-align: center;
 	display: block;
 	width: 70%;
+	height: 60%;
 }
 
 .items-placeholder {
-	width: 45%;
-	background-color: white;
+	vertical-align: top;
+	width: 160px;
+	background-color: #272727;
 	display: inline-block;
+	border: 3px solid white;
+	color: white;
 }
 
 .info-placeholder {
-	width: 45%;
-	background-color: aqua;
+	vertical-align: top;
+	height: 50vh;
+	width: 40%;
+	background-color: #272727;
 	display: inline-block;
+	border: 3px solid white;
+	color: white;
+}
+
+.look_img {
+	border: 1px solid white;
+	width: 132px;
+	height: 192px;
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#desc-text {
+	width: 90%;
 }
 
 /*
