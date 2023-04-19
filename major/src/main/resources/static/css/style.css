@@ -302,6 +302,26 @@ body {
 	background-color: white;
 	color: black;
 }
+
+.create-look-page {
+	margin: 0 auto;
+	text-align: center;
+	display: block;
+	width: 70%;
+}
+
+.items-placeholder {
+	width: 40%;
+	background-color: white;
+	display: inline-block;
+}
+
+.info-placeholder {
+	width: 50%;
+	background-color: aqua;
+	display: inline-block;
+}
+
 /*
 
 
