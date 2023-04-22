@@ -44,6 +44,7 @@
 								<li class="nav-item active"> <a class="nav-link mobile_auth" sec:authorize="isAnonymous()" th:href="@{/login}" href="#">Войти</a> </li>
 								<li class="nav-item active"> <a class="nav-link mobile_auth" sec:authorize="isAuthenticated()" th:href="@{/logout}" href="#">Выйти</a> </li>
 								<li class="nav-item active"> <a class="nav-link" th:href="@{/cart}" href="#">Избранное</a> </li>
+								<li class="nav-item active"> <a class="nav-link" th:href="@{/profile}" href="#">Профиль</a> </li>
 								<li class="nav-item active"> <span class="nav-link" th:text="${cartCount}">0</span> </li>
 							</ul>
 						</div>
@@ -52,12 +53,15 @@
 			</div>
 		<div class="container promo_box">
 			<a th:href="@{/shop/men_all/-1}" href="#"><img class="promo_img" src="../static/images/logo_grid_4_tes12t.png">
-			<a th:href="@{/shop/men_all/-1}" href="#"><img class="promo_img" src="../static/images/logo_grid_4_test.png">
+			<a th:href="@{/shop/Ladies/-1}" href="#"><img class="promo_img" src="../static/images/logo_grid_4_test.png">
 			<a th:href="@{/shop/men_all/-1}" href="#"><img class="promo_img" src="../static/images/32.png">
-			<a th:href="@{/shop/men_all/-1}" href="#"><img class="promo_img" src="../static/images/logo_grid_4_tes12t.png">
+			<a th:href="@{/shop/Ladies/-1}" href="#"><img class="promo_img" src="../static/images/logo_grid_4_tes12t.png">
 			<div class="container promo_prompt">
 				<h1 onmouseover="chbg('white')" onmouseout="chbg('black')">
 					<a class="nav-link promo_nav" th:href="@{/shop/Ladies/-1}" href="#">Одежда на каждый день</a>
+				</h1>
+				<h1 onmouseover="chbg('white')" onmouseout="chbg('black')">
+					<a class="nav-link promo_nav" th:href="@{/lookamaker}" href="#">Создать свой жесткий лучелло</a>
 				</h1>
 			</div>
 		</div>
