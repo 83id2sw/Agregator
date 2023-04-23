@@ -39,6 +39,15 @@ public class HomeController {
         return "index";
     }
 
+    @GetMapping("/lookamaker")
+    public String lookmaker(@AuthenticationPrincipal User user, Model model) {
+        user = userRepository.findUserByEmail(user.getEmail()).get();
+
+        model.addAttribute("cartCount", cartRepository.findCartByUser(user) != null && cartRepository.findCartByUser(user).getProducts().size() != 0
+                ?cartRepository.findCartByUser(user).getProducts().size() : "");
+        return "lookamaker";
+    }
+
     @GetMapping("/profile")
     public String profile(@AuthenticationPrincipal User user, Model model) {
         user = userRepository.findUserByEmail(user.getEmail()).get();
