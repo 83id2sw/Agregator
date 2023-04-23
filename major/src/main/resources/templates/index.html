@@ -56,11 +56,13 @@
 			<a th:href="@{/shop/Ladies/-1}" href="#"><img class="promo_img" src="../static/images/logo_grid_4_test.png">
 			<a th:href="@{/shop/men_all/-1}" href="#"><img class="promo_img" src="../static/images/32.png">
 			<a th:href="@{/shop/Ladies/-1}" href="#"><img class="promo_img" src="../static/images/logo_grid_4_tes12t.png">
-			<div class="container promo_prompt">
-				<h1 onmouseover="chbg('white')" onmouseout="chbg('black')">
+			<div class="container promo_prompt" id="fir_link">
+				<h1 onmouseover="chbg_1link('white')" onmouseout="chbg_1link('black')">
 					<a class="nav-link promo_nav" th:href="@{/shop/Ladies/-1}" href="#">Одежда на каждый день</a>
 				</h1>
-				<h1 onmouseover="chbg('white')" onmouseout="chbg('black')">
+			</div>
+			<div class="container promo_prompt" id="sec_link">
+				<h1 onmouseover="chbg_2link('white')" onmouseout="chbg_2link('black')">
 					<a class="nav-link promo_nav" th:href="@{/lookamaker}" href="#">Создать свой жесткий лучелло</a>
 				</h1>
 			</div>
