@@ -19,6 +19,8 @@ public class ClothSet {
 
     private String name;
 
+    private String description;
+
     @ManyToOne
     private User user;
 

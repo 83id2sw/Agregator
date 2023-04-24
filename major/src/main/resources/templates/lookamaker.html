@@ -51,28 +51,32 @@
 				</nav>
 			</div>
 		<div class="create-look-page align-items-lg-center">
-		<div class="items-placeholder">
-			<div class="cloth-img">
-				<div id="look_add_info">Добавьте товары</div>
-				<img class="look_img" src="../static/images/logo_grid_4_tes12t.png">
-				<img class="look_img" src="../static/images/logo_grid_4_tes12t.png">
-				<img class="look_img" src="../static/images/logo_grid_4_tes12t.png">
-				<img class="look_img" src="../static/images/logo_grid_4_tes12t.png">
-			</div>
+			<form th:action="@{/lookamaker/add}" method="post" th:object="${createdSet}">
+				<div class="items-placeholder" style="overflow-y: scroll; height: 700px">
+					<div id="look_add_info">Добавьте товары</div>
+					<div class="cloth-img" th:each="product : ${cart}">
+						<img class="look_img" th:src="@{${product.logoPicture}}">
+						<label class="switch">
+							<input type="checkbox">
+							<span th: class="slider round"></span>
+						</label>
+					</div>
+				</div>
+				<div class="info-placeholder">
+					<input type="hidden" name="id"  th:field="*{id}">
+					<div id="look-label">Название</div>
+					<div class="look-inputs">
+						<input name="name" id="name" type="text" required th:field="*{name}" placeholder="Введите название" align="left">
+						<input id="label-subm" type="submit" align="right">
+					</div>
+					<div class="look-inputs">
+						<div id="look-desc">Информация</div>
+						<textarea id="description" required th:field="*{description}" placeholder="Введите описание" name="description" cols="40" rows="5"></textarea>
+					</div>
+		<!--			<input id="desc-text" type="text" placeholder="Введите описание">-->
+				</div>
+			</form>
 		</div>
-		<div class="info-placeholder">
-			<div id="look-label">Название</div>
-			<div class="look-inputs">
-				<input id="look-text" type="text" placeholder="Введите название" align="left">
-				<input id="label-subm" type="submit" align="right">
-			</div>
-			<div class="look-inputs">
-				<div id="look-desc">Информация</div>
-				<textarea id="desc-text" placeholder="Введите описание" name="desc-text" cols="40" rows="5"></textarea>
-			</div>
-<!--			<input id="desc-text" type="text" placeholder="Введите описание">-->
-		</div>
-	</div>
 		<div class="site-footer">
 			<ul class="foot list-unstyled">
 				<li><a class="footer-text" href="https://github.com/Dmitryq/Agregator">GitHub</a></li>

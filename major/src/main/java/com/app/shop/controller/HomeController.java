@@ -1,5 +1,6 @@
 package com.app.shop.controller;
 
+import com.app.shop.model.Product;
 import com.app.shop.model.User;
 import com.app.shop.repository.CartRepository;
 import com.app.shop.repository.UserRepository;
@@ -14,6 +15,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+
+import java.util.List;
 
 @Controller
 public class HomeController {
@@ -37,15 +40,6 @@ public class HomeController {
         model.addAttribute("cartCount", user != null && cartRepository.findCartByUser(user) != null && cartRepository.findCartByUser(user).getProducts().size() != 0
                 ?cartRepository.findCartByUser(user).getProducts().size() : "");
         return "index";
-    }
-
-    @GetMapping("/lookamaker")
-    public String lookmaker(@AuthenticationPrincipal User user, Model model) {
-        user = userRepository.findUserByEmail(user.getEmail()).get();
-
-        model.addAttribute("cartCount", cartRepository.findCartByUser(user) != null && cartRepository.findCartByUser(user).getProducts().size() != 0
-                ?cartRepository.findCartByUser(user).getProducts().size() : "");
-        return "lookamaker";
     }
 
     @GetMapping("/profile")
