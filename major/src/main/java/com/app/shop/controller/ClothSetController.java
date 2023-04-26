@@ -8,18 +8,20 @@ import com.app.shop.repository.UserRepository;
 import com.app.shop.service.CategoryService;
 import com.app.shop.service.ClothSetService;
 import com.app.shop.service.ProductService;
+import com.google.gson.JsonElement;
+import net.minidev.json.JSONArray;
+import net.minidev.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 public class ClothSetController {
@@ -51,10 +53,8 @@ public class ClothSetController {
     }
 
     @PostMapping("/lookamaker/add")
-    public String lookamekerPost(@AuthenticationPrincipal User user, @ModelAttribute("createdSet") ClothSet createdSet) {
-        ClothSet clothSet = new ClothSet();
-        clothSet.setUser(user);
-        clothSetService.addClothSet(clothSet);
+    public String lookamekerPost(@AuthenticationPrincipal User user, @RequestBody Map<String, String> data){
+        clothSetService.addClothSet(user, data);
         return "redirect:/";
     }
 

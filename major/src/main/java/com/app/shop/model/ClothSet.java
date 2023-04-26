@@ -24,6 +24,6 @@ public class ClothSet {
     @ManyToOne
     private User user;
 
-    @OneToMany(cascade = CascadeType.MERGE)
+    @ManyToMany(cascade = CascadeType.MERGE)
     private List<Product> products = new ArrayList<>();
 }

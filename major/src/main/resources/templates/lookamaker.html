@@ -32,7 +32,7 @@
 							<div class="form-search">
 								<form class="form-inline">
 									<input class="input-search" type="search" placeholder="Что ищем?" aria-label="search">
-									<button class="search-btn-outline-success" type="submit">Поиск</button>
+									<button class="search-btn-outline-success">Поиск</button>
 								</form>
 							</div>
 						<ul class="navbar-nav mr-auto">
@@ -51,31 +51,32 @@
 				</nav>
 			</div>
 		<div class="create-look-page align-items-lg-center">
-			<form th:action="@{/lookamaker/add}" method="post" th:object="${createdSet}">
+			<div>
 				<div class="items-placeholder" style="overflow-y: scroll; height: 700px">
 					<div id="look_add_info">Добавьте товары</div>
 					<div class="cloth-img" th:each="product : ${cart}">
 						<img class="look_img" th:src="@{${product.logoPicture}}">
-						<label class="switch">
-							<input type="checkbox">
-							<span th: class="slider round"></span>
+						<label class="switch products" th:id="${product.id}">
+							<input type="checkbox" id="checkbox">
+							<span class="slider round"></span>
 						</label>
 					</div>
 				</div>
 				<div class="info-placeholder">
-					<input type="hidden" name="id"  th:field="*{id}">
+<!--					<input type="hidden" name="id"  th:field="{id}">-->
 					<div id="look-label">Название</div>
 					<div class="look-inputs">
-						<input name="name" id="name" type="text" required th:field="*{name}" placeholder="Введите название" align="left">
-						<input id="label-subm" type="submit" align="right">
+						<input  id="name" type="text" required name="name" placeholder="Введите название" align="left">
+						<button style="height: 50px; width: 160px" onclick="createNewSet()">Сохранить</button>
 					</div>
 					<div class="look-inputs">
 						<div id="look-desc">Информация</div>
-						<textarea id="description" required th:field="*{description}" placeholder="Введите описание" name="description" cols="40" rows="5"></textarea>
+						<textarea id="description" required name="description" placeholder="Введите описание" cols="40" rows="5"></textarea>
 					</div>
+					<label id="success"></label>
 		<!--			<input id="desc-text" type="text" placeholder="Введите описание">-->
 				</div>
-			</form>
+			</div>
 		</div>
 		<div class="site-footer">
 			<ul class="foot list-unstyled">
@@ -83,7 +84,8 @@
 				<li><a class="footer-text" href="https://www.google.com/doodles/">Feeling lucky?</a></li>
 			</ul>
 		</div>
-		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" th:src="@{/js/setStashe.js}"></script>
 		<script src="../static/js/popper.min.js"></script>
 		<script src="../static/js/kostili.js"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

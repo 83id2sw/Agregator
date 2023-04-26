@@ -8,6 +8,8 @@ import org.springframework.data.jpa.repository.Query;
 import java.util.List;
 
 public interface ProductRepository extends JpaRepository<Product, Long> {
+
+    Product findProductById(Long id);
     List<Product> findAllByCategoryId(int id);
 
     List<Product> findAllBySexAndCategory(String sex, Category category);
