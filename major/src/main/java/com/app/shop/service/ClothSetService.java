@@ -1,6 +1,6 @@
 package com.app.shop.service;
 
-import com.app.shop.model.Category;
+
 import com.app.shop.model.ClothSet;
 import com.app.shop.model.Product;
 import com.app.shop.model.User;
@@ -14,18 +14,37 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Service for cloth set.
+ **/
 @Service
 public class ClothSetService {
 
+    /**
+     * Repository for cloth set.
+     **/
     @Autowired
     ClothSetRepository clothSetRepository;
 
+    /**
+     * Repository for product.
+     **/
     @Autowired
     ProductRepository productRepository;
 
+    /**
+     * Repository for user.
+     **/
     @Autowired
     UserRepository userRepository;
 
+    /**
+     * Function for adding cloth set by user and data.
+     *
+     @param user Auth user.
+     *
+     @param data Data of cloth set.
+     **/
     public void addClothSet(User user, Map<String, String> data) {
         user = userRepository.findUserByEmail(user.getEmail()).get();
 

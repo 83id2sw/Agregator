@@ -5,39 +5,53 @@ import com.app.shop.model.*;
 import com.app.shop.repository.CartRepository;
 import com.app.shop.repository.ClothSetRepository;
 import com.app.shop.repository.UserRepository;
-import com.app.shop.service.CategoryService;
 import com.app.shop.service.ClothSetService;
-import com.app.shop.service.ProductService;
-import com.google.gson.JsonElement;
-import net.minidev.json.JSONArray;
-import net.minidev.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+/**
+* Controller for cloth sets.
+* */
 @Controller
 public class ClothSetController {
 
+    /**
+     * Repository for cloth sets
+     * */
     @Autowired
     ClothSetRepository clothSetRepository;
 
+    /**
+     * Repository for user.
+     * */
     @Autowired
     UserRepository userRepository;
 
+    /**
+     * Service for cloth sets.
+     * */
     @Autowired
     ClothSetService clothSetService;
 
+    /**
+     * Repository for cart.
+     * */
     @Autowired
     CartRepository cartRepository;
 
+    /**
+     * Mapping for getting lookamaker page.
+     *
+     @param user Authorized user.
+     *
+     @return Page for filling in fields.
+     **/
     @GetMapping("/lookamaker")
     public String lookmaker(@AuthenticationPrincipal User user, Model model) {
         user = userRepository.findUserByEmail(user.getEmail()).get();
@@ -52,6 +66,15 @@ public class ClothSetController {
         return "lookamaker";
     }
 
+    /**
+     * Mapping for lookamaker/add page.
+     *
+     @param user Authorized user.
+     *
+     @param data Data for cloth set.
+     *
+     @return page for creating cloth set.
+      **/
     @PostMapping("/lookamaker/add")
     public String lookamekerPost(@AuthenticationPrincipal User user, @RequestBody Map<String, String> data){
         clothSetService.addClothSet(user, data);

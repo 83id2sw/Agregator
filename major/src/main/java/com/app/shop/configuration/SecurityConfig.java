@@ -12,13 +12,30 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
+/**
+ * Configuration for Web Security.
+ * */
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
+
+    /**
+     * OAuth2 Login.
+     **/
     @Autowired
     GoogleOAuth2SuccessHandler googleOAuth2SuccessHandler;
+
+    /**
+     * Service for customUserDetail.
+     **/
     @Autowired
     CustomUserDetailService customUserDetailService;
+
+    /**
+     * Function for configure web security.
+     *
+     @param http httpSecurity.
+     **/
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
@@ -54,16 +71,31 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     }
 
+    /**
+     * Function for creating object.
+     *
+     @return New BCryptPasswordEncoder object.
+     **/
     @Bean
     public BCryptPasswordEncoder bCryptPasswordEncoder() {
         return new BCryptPasswordEncoder();
     }
 
+    /**
+     * Function for configure userDetailsService.
+     *
+     @param auth Authentication Manager.
+     **/
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(customUserDetailService);
     }
 
+    /**
+     * Function for ignoring app files.
+     *
+     @param web Web security.
+     **/
     @Override
     public void configure(WebSecurity web) throws Exception {
         web.ignoring().antMatchers("/resources/**", "/static/**", "/images/**", "/productImages/**", "/css/**", "/js/**", "/error/**");

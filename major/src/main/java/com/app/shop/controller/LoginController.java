@@ -18,28 +18,65 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Controller for login page.
+ * */
 @Controller
 public class LoginController {
 
+    /**
+     * Repository for cart.
+     **/
     @Autowired
     CartRepository cartRepository;
+
+    /**
+     *  Used for storing a password that needs to be compared to a user-provided password at the time of authentication.
+     **/
     @Autowired
     private BCryptPasswordEncoder bCryptPasswordEncoder;
+
+    /**
+     * Repository for user.
+     **/
     @Autowired
     UserRepository userRepository;
+
+    /**
+     * Repository for role.
+     **/
     @Autowired
     RoleRepository roleRepository;
 
+    /**
+     * Mapping for login page.
+     *
+     @return Page for log in.
+     **/
     @GetMapping("/login")
     public String login() {
         return "login";
     }
 
+    /**
+     * Mapping for register page.
+     *
+     @return Page for registration user's account.
+     **/
     @GetMapping("/register")
     public String registerGet() {
         return "register";
     }
 
+    /**
+     * Mapping for /register page.
+     *
+     @param user Authorized user.
+     *
+     @param request User's request.
+     *
+     @return Page for registered users.
+     **/
     @PostMapping("/register")
     public String registerPost(@ModelAttribute("user")User user, HttpServletRequest request) throws ServletException {
         String password = user.getPassword();

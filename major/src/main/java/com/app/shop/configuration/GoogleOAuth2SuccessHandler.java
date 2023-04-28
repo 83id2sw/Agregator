@@ -12,7 +12,6 @@ import org.springframework.security.web.RedirectStrategy;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 import org.springframework.stereotype.Component;
 
-import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -20,14 +19,38 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Configuration for GoogleOAuth2.
+ * */
 @Component
 public class GoogleOAuth2SuccessHandler implements AuthenticationSuccessHandler {
+
+    /**
+     * Repository for role.
+     **/
     @Autowired
     RoleRepository roleRepository;
+
+    /**
+     * Repository for user.
+     **/
     @Autowired
     UserRepository userRepository;
 
+    /**
+     * Redirect strategy.
+     **/
     private RedirectStrategy redirectStrategy = new DefaultRedirectStrategy();
+
+    /**
+     * Function for event, when Auth success: sending redirect to home page.
+     *
+     @param httpServletRequest Http Servlet Request.
+     *
+     @param httpServletResponse Http Servlet Response.
+     *
+     @param authentication Authentication.
+     **/
     @Override
     public void onAuthenticationSuccess(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Authentication authentication) throws IOException, ServletException {
         OAuth2AuthenticationToken token = (OAuth2AuthenticationToken) authentication;
