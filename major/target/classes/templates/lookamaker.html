@@ -55,7 +55,9 @@
 				<div class="items-placeholder" style="overflow-y: scroll; height: 700px">
 					<div id="look_add_info">Добавьте товары</div>
 					<div class="cloth-img" th:each="product : ${cart}">
-						<img class="look_img" th:src="@{${product.logoPicture}}">
+<!--						<div class="img_container">-->
+							<img class="look_img" th:src="@{${product.logoPicture}}">
+<!--						</div>-->
 						<label class="switch products" th:id="${product.id}">
 							<input type="checkbox" id="checkbox">
 							<span class="slider round"></span>
@@ -63,18 +65,35 @@
 					</div>
 				</div>
 				<div class="info-placeholder">
-<!--					<input type="hidden" name="id"  th:field="{id}">-->
-					<div id="look-label">Название</div>
-					<div class="look-inputs">
-						<input  id="name" type="text" required name="name" placeholder="Введите название" align="left">
-						<button style="height: 50px; width: 160px" onclick="createNewSet()">Сохранить</button>
+					<div class="mv-text-contents">
+						<span class="floating-text">  shopdigger shopdigger shopdigger shopdigger shopdigger shopdigger  </span>
+						<span class="floating-text">  shopdigger shopdigger shopdigger shopdigger shopdigger shopdigger  </span>
+						<span class="floating-text">  shopdigger shopdigger shopdigger shopdigger shopdigger shopdigger  </span>
+						<span class="floating-text">  shopdigger shopdigger shopdigger shopdigger shopdigger shopdigger  </span>
+						<span class="floating-text">  shopdigger shopdigger shopdigger shopdigger shopdigger shopdigger  </span>
+						<span class="floating-text">  shopdigger shopdigger shopdigger shopdigger shopdigger shopdigger  </span>
+						<span class="floating-text">  shopdigger shopdigger shopdigger shopdigger shopdigger shopdigger  </span>
+						<span class="floating-text">  shopdigger shopdigger shopdigger shopdigger shopdigger shopdigger  </span>
+						<span class="floating-text">  shopdigger shopdigger shopdigger shopdigger shopdigger shopdigger  </span>
+						<span class="floating-text">  shopdigger shopdigger shopdigger shopdigger shopdigger shopdigger  </span>
+						<span class="floating-text">  shopdigger shopdigger shopdigger shopdigger shopdigger shopdigger  </span>
+						<span class="floating-text">  shopdigger shopdigger shopdigger shopdigger shopdigger shopdigger  </span>
+						<span class="floating-text">  shopdigger shopdigger shopdigger shopdigger shopdigger shopdigger  </span>
 					</div>
-					<div class="look-inputs">
-						<div id="look-desc">Информация</div>
-						<textarea id="description" required name="description" placeholder="Введите описание" cols="40" rows="5"></textarea>
+					<div class="info-placeholder-2">
+	<!--					<input type="hidden" name="id"  th:field="{id}">-->
+						<div id="look-label">Название</div>
+						<div class="look-inputs">
+							<input  id="name" type="text" required name="name" placeholder="Введите название">
+							<button class="cart_btn look_btn" onclick="createNewSet()">Сохранить</button>
+						</div>
+						<div class="look-inputs">
+							<div id="look-desc">Информация</div>
+							<textarea class="look_input_description" id="description" required name="description" placeholder="Введите описание" cols="40" rows="5"></textarea>
+						</div>
+						<label id="success"></label>
+			<!--			<input id="desc-text" type="text" placeholder="Введите описание">-->
 					</div>
-					<label id="success"></label>
-		<!--			<input id="desc-text" type="text" placeholder="Введите описание">-->
 				</div>
 			</div>
 		</div>

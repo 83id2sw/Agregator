@@ -8,7 +8,7 @@ function createNewSet() {
 
     var data = {
         name: name.value,
-        description: description.value,
+        description: description.value
     };
 
     for (let i = 0; i < products.length; i++) {
