@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/projectSite.iml" filepath="$PROJECT_DIR$/.idea/projectSite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/AgregatorGit.iml" filepath="$PROJECT_DIR$/.idea/AgregatorGit.iml" />
     </modules>
   </component>
 </project>
