@@ -408,7 +408,7 @@ body {
 	grid-column-start: 1;
 	grid-row-start: 1;
 	position: absolute;
-	max-width: 70%;
+	max-width: 40%;
 	background-color: rgb(24, 24, 24);
 	margin: 30px 0;
 	display: inline-block;
