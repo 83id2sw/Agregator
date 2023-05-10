@@ -52,17 +52,17 @@
 			</div>
 		<div class="create-look-page align-items-lg-center">
 			<div>
-				<div class="items-placeholder" style="overflow-y: scroll; height: 700px">
+				<div class="items-placeholder" style="height: 800px">
 					<div id="look_add_info">Добавьте товары</div>
 					<div class="cloth-img" th:each="product : ${cart}">
 <!--						<div class="img_container">-->
 							<img class="look_img" th:src="@{${product.logoPicture}}">
 <!--						</div>-->
-						<label class="switch products" th:id="${product.id}">
-							<input type="checkbox" id="checkbox">
-							<span class="slider round"></span>
-						</label>
 					</div>
+					<label class="switch products" th:id="${product.id}">
+						<input type="checkbox" id="checkbox">
+						<span class="slider"></span>
+					</label>
 				</div>
 				<div class="info-placeholder">
 					<div class="mv-text-contents">

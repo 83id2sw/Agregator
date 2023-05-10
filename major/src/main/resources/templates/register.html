@@ -1,75 +1,97 @@
 <!doctype html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org"
-      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-	<link th:href="@{/css/style.css}" href="../static/css/style.css" rel="stylesheet" type="text/css">
-    <title>Document</title>
-</head>
-<body>
-<nav class="navbar navbar-expand-lg">
-    <div class="container-fluid"> <a class="navbar-brand" href="#"> <img th:src="@{/images/logo_word.png}"  src="../static/images/logo_word.png" width="auto" height="25" class="d-inline-block fa-align-center image-logo" alt=""/> </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-        </ul>
-        <ul class="navbar-nav">
-			<li class="nav-item active">
-				<a class="nav-link" th:href="@{/}" href="#">Домой</a>
-			</li>
-			<li class="nav-item active">
-				<a class="nav-link" th:href="@{/shop}" href="#">Магазин</a>
-			</li>
-			<li class="nav-item active">
-				<a class="nav-link" href="#">Регистрация</a>
-			</li>
-        </ul>
+   xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport"
+         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+      <link th:href="@{/css/style.css}" href="../static/css/style.css" rel="stylesheet" type="text/css">
+      <title>Document</title>
+   </head>
+   <body>
+      <div class="container-fluid" style="padding-left: 0; padding-right: 0;">
+         <div class="top_nav">
+            <div class="top_nav_l1 align-items-lg-center">
+               <div class="top_nav_left"> Прекрасный агрегатор! </div>
+               <div class="d-lg-flex top_nav_right align-items-lg-center">
+                  <a class="nav-link" sec:authorize="isAnonymous()" th:href="@{/login}" href="#">Войти</a>
+                  или может
+                  <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/logout}" href="#">Выйти</a>
+               </div>
+            </div>
+         </div>
+         <div class="navbar">
+            <nav class="w-75 navbar-expand-lg">
+               <div class="container-fluid nav_mobile">
+                  <a class="navbar-brand" th:href="@{/}" href="#"> <img th:src="@{/images/logo_word.png}"  src="../static/images/logo_word.png" width="auto" height="25" class="d-inline-block fa-align-center image-logo" alt=""/> </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"><img class="navbar_dropdown_icon" src="../static/images/menu.png"></span> </button>
+                  <div class="collapse navbar-collapse collapsed_nav" id="navbarSupportedContent">
+                     <div class="form-search">
+                        <form class="form-inline">
+                           <input class="input-search" type="search" placeholder="Что ищем?" aria-label="search">
+                           <button class="search-btn-outline-success" type="submit">Поиск</button>
+                        </form>
+                     </div>
+                     <ul class="navbar-nav mr-auto">
+                     </ul>
+                     <ul class="navbar-nav">
+                        <li class="nav-item active"> <a class="nav-link" th:href="@{/shop/men_all/-1}" href="#">Мужчинам<span class="sr-only">(current)</span></a> </li>
+                        <li class="nav-item active"> <a class="nav-link" th:href="@{/shop/Ladies/-1}" href="#">Женщинам</a> </li>
+                        <!--          <li class="nav-item active"> <a class="nav-link" th:href="@{/shop/-1}" href="#">shop</a> </li>-->
+                        <li class="nav-item active"> <a class="nav-link mobile_auth" sec:authorize="isAnonymous()" th:href="@{/login}" href="#">Войти</a> </li>
+                        <li class="nav-item active"> <a class="nav-link mobile_auth" sec:authorize="isAuthenticated()" th:href="@{/logout}" href="#">Выйти</a> </li>
+                        <li class="nav-item active"> <a class="nav-link" th:href="@{/cart}" href="#">Избранное</a> </li>
+                        <li class="nav-item active"> <a class="nav-link" th:href="@{/profile}" href="#">Профиль</a> </li>
+                        <li class="nav-item active"> <span class="nav-link" th:text="${cartCount}">0</span> </li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+         </div>
       </div>
-    </div>
-  </nav>
-<div class="container">
-    <div class="col-sm-6 products">
-        <h3 style="margin-top: 10px">Sign Up Now</h3>
-        <p>Please fill out this to register</p>
-        <form th:action="@{/register}" th:object="${user}" method="post">
-            <div class="form-group">
-                <label for="firstName">First Name</label>
-                <input type="text" name="firstName" id="firstName" required placeholder="Your Firstname" class="form-control form-control-lg">
-            </div>
-            <div class="form-group">
-                <label for="lastName">Last Name</label>
-                <input type="text" name="lastName" id="lastName" required placeholder="Your Lastname" class="form-control form-control-lg">
-            </div>
-            <div class="form-group">
-                <label for="email">Email address</label>
-                <input type="email" class="form-control form-control-lg" required minlength="6" placeholder="Email" name="email" id="email"
-                       aria-describedby="emailHelp">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with
-                    anyone else.</small>
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" class="form-control form-control-lg" required placeholder="Password" name="password"
-                       id="password">
-            </div>
-
-            <input type="submit" value="Register" class="btn btn-primary btn-block">
-            <span style="margin-top: 10px">Already have an account <a class="linkControl" href="./login.html"
-                                                                      th:href="@{/login}">Login here</a></span>
-        </form>
-    </div>
-</div>
-
-
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
+      <div class="container">
+         <div class="col-sm-6 register-form">
+            <h3 style="margin-top: 10px">Регистрация</h3>
+            <!-- <p>Please fill out this to register</p> -->
+            <form th:action="@{/register}" th:object="${user}" method="post">
+               <div class="form-group">
+                  <label for="firstName">Имя</label>
+                  <input type="text" name="firstName" id="firstName" required placeholder="Имя" class="form-control form-control-lg">
+               </div>
+               <div class="form-group">
+                  <label for="lastName">Фамилия</label>
+                  <input type="text" name="lastName" id="lastName" required placeholder="Фамилия" class="form-control form-control-lg">
+               </div>
+               <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control form-control-lg" required minlength="6" placeholder="Email" name="email" id="email"
+                     aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted" style="margin-bottom: -5px;">Ваш адрес никому не уйдет.</small>
+               </div>
+               <div class="form-group">
+                  <label for="password">Пароль</label>
+                  <input type="password" class="form-control form-control-lg" required placeholder="Пароль" name="password"
+                     id="password">
+               </div>
+               <input type="submit" value="Регистрация" class="btn btn-primary btn-block cart_btn" style="margin-bottom: 10px;">
+               <span>Есть аккаунт?  <a class="linkControl footer-text" href="./login.html"
+                  th:href="@{/login}">Войти</a></span>
+            </form>
+         </div>
+      </div>
+      <div class="site-footer">
+         <ul class="foot list-unstyled">
+            <li><a class="footer-text" href="https://github.com/Dmitryq/Agregator">GitHub</a></li>
+            <li><a class="footer-text" href="https://www.google.com/doodles/">Feeling lucky?</a></li>
+         </ul>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   </body>
 </html>

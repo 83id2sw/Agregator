@@ -189,8 +189,32 @@ body {
     padding: 1.25rem;
 }
 
+.text-danger {
+	text-align: center;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.form-control{
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+			border-radius: 0;
+  }
+
 .login-form  {
-	background: #FFFFFF;
+	background: #272727;
+	margin: auto;
+	padding: 15px;
+	color: white;
+	border: 2px solid white;
+}
+
+.register-form {
+	background: #272727;
+	margin: auto;
+	padding: 15px;
+	color: white;
+	border: 2px solid white;
 }
 
 .receipt {
@@ -329,7 +353,7 @@ body {
 
 .items-placeholder {
 	margin: 0 auto;
-	max-height: 290px;
+	max-height: 300px;
 	width: 80%;
 	background-color: #272727;
 	display: block;
@@ -596,7 +620,7 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: #ccc;
+	background-color: #FFFFFF;
 	-webkit-transition: .4s;
 	transition: .4s;
 }
@@ -608,17 +632,17 @@ body {
 	width: 26px;
 	left: 4px;
 	bottom: 4px;
-	background-color: white;
+	background-color: #272727;
 	-webkit-transition: .4s;
 	transition: .4s;
 }
 
 input:checked + .slider {
-	background-color: #2196F3;
+	background-color: #228E5D;
 }
 
 input:focus + .slider {
-	box-shadow: 0 0 1px #2196F3;
+	box-shadow: 0 0 1px #228E5D;
 }
 
 input:checked + .slider:before {
@@ -634,4 +658,20 @@ input:checked + .slider:before {
 
 .slider.round:before {
 	border-radius: 50%;
+}
+
+.admin-template {
+	margin: auto;
+	background: #272727;
+	width: 50%;
+	text-align: center;
+	color: #FFFFFF;
+	border: 2px solid white;
+	padding: 10px;
+}
+
+.admin-category {
+	background: #272727;
+	color: #FFFFFF;
+	border: 2px solid white;
 }
