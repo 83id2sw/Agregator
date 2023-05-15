@@ -51,12 +51,12 @@
             </nav>
          </div>
       </div>
-      <div class="container mt-5 col-md-6 products">
-         <div class="row lk-container">
-            <div class="col-sm-3 d-flex justify-content-center">
+      <div class="products lk-container">
+         <div class="lk-row">
+            <div class="user-icon-div">
                <img id="user-icon"  th:src="@{/images/user_icon.png}" src="../static/images/user_icon.png">
             </div>
-            <div class="col-sm-7 mt-5 user-data">
+            <div class="user-data">
                <h2 id="user-id" th:text="${profile.getId()}">id</h2>
                <h2 class="user-data-2" th:text="${profile.getFirstName()}">имя</h2>
                <h2 class="user-data-2" th:text="${profile.getLastName()}">фамилия</h2>
@@ -69,9 +69,6 @@
          <div class="cloth-img" th:each="product : ${cart}">
             <!--						<div class="img_container">-->
             <img class="look_img" th:src="@{${product.logoPicture}}">
-            <img class="look_img" th:src="@{${product.logoPicture}}">
-            <img class="look_img" th:src="@{${product.logoPicture}}">
-
             <!--						</div>-->
          </div>
       </div>
