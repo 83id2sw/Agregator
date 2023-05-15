@@ -53,10 +53,10 @@
 			</div>
 		</div>
 		<div class="container promo_box">
-			<a th:href="@{/shop/men_all/-1}" href="#"><img class="promo_img" src="../static/images/logo_grid_4_tes12t.png"></a>
-			<a th:href="@{/shop/Ladies/-1}" href="#"><img class="promo_img" src="../static/images/logo_grid_4_test.png"></a>
-			<a th:href="@{/shop/men_all/-1}" href="#"><img class="promo_img" src="../static/images/32.png"></a>
-			<a th:href="@{/shop/Ladies/-1}" href="#"><img class="promo_img" src="../static/images/logo_grid_4_tes12t.png"></a>
+			<a th:href="@{/shop/Ladies/-1}" href="#"><img class="promo_img" th:src="@{${product_l1.normalPicture}}"></a>
+			<a th:href="@{/shop/Ladies/-1}" href="#"><img class="promo_img" th:src="@{${product_l2.normalPicture}}"></a>
+			<a th:href="@{/shop/men_all/-1}" href="#"><img class="promo_img" th:src="@{${product_men.normalPicture}}" src="../static/images/32.png"></a>
+			<a th:href="@{/shop/Ladies/-1}" href="#"><img class="promo_img" th:src="@{${product_l3.normalPicture}}"></a>
 			<div class="container promo_prompt" id="fir_link">
 				<h1 onmouseover="chbg_1link('white')" onmouseout="chbg_1link('black')">
 					<a class="nav-link promo_nav" th:href="@{/shop/Ladies/-1}" href="#">Одежда на каждый день</a>

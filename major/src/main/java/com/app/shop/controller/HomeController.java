@@ -3,6 +3,7 @@ package com.app.shop.controller;
 
 import com.app.shop.model.User;
 import com.app.shop.repository.CartRepository;
+import com.app.shop.repository.ProductRepository;
 import com.app.shop.repository.UserRepository;
 import com.app.shop.service.CategoryService;
 import com.app.shop.service.ProductService;
@@ -44,13 +45,15 @@ public class HomeController {
     @Autowired
     CartRepository cartRepository;
 
+    @Autowired
+    ProductRepository productRepository;
+
     /**
      * Mapping for /home page.
      *
-     @param user Authorized user.
-     *
-     @return Page for navigation between sections.
-     **/
+     * @param user Authorized user.
+     * @return Page for navigation between sections.
+     */
     @GetMapping({"/", "/home"})
     public String home(@AuthenticationPrincipal User user, Model model) {
 
@@ -59,6 +62,12 @@ public class HomeController {
 
         model.addAttribute("cartCount", user != null && cartRepository.findCartByUser(user) != null && cartRepository.findCartByUser(user).getProducts().size() != 0
                 ?cartRepository.findCartByUser(user).getProducts().size() : "");
+
+        model.addAttribute("product_l1", productService.getAllProduct().get(19));
+        model.addAttribute("product_l2", productService.getAllProduct().get(11));
+        model.addAttribute("product_men", productService.getAllProduct().get(64));
+        model.addAttribute("product_l3", productService.getAllProduct().get(40));
+
         return "index";
     }
 
