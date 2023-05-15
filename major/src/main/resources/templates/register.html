@@ -19,9 +19,8 @@
             <div class="top_nav_l1 align-items-lg-center">
                <div class="top_nav_left"> Прекрасный агрегатор! </div>
                <div class="d-lg-flex top_nav_right align-items-lg-center">
-                  <a class="nav-link" sec:authorize="isAnonymous()" th:href="@{/login}" href="#">Войти</a>
-                  или может
-                  <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/logout}" href="#">Выйти</a>
+                  <a class="nav-link auth-link" sec:authorize="isAnonymous()" th:href="@{/login}" href="#">Войти</a>
+                  <a class="nav-link auth-link" sec:authorize="isAuthenticated()" th:href="@{/logout}" href="#">Выйти</a>
                </div>
             </div>
          </div>

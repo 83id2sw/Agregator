@@ -763,3 +763,11 @@ input:checked + .slider:before {
 	display: inline-block;
 }
 
+.look_img {
+	margin: 0 20px;
+	margin-bottom: 10px !important;
+}
+
+.auth-link {
+	position: absolute;
+}
