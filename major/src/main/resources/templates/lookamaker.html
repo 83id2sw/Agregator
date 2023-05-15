@@ -50,19 +50,46 @@
 					</div>
 				</nav>
 			</div>
-		<div class="create-look-page align-items-lg-center">
-			<div>
-				<div class="items-placeholder" style="height: 800px">
+		<div class="create-look-page">
+			<div class="look-container">
+				<div class="items-placeholder">
 					<div id="look_add_info">Добавьте товары</div>
 					<div class="cloth-img" th:each="product : ${cart}">
 <!--						<div class="img_container">-->
 							<img class="look_img" th:src="@{${product.logoPicture}}">
 <!--						</div>-->
+							<label class="switch products" th:id="${product.id}">
+								<input type="checkbox" id="checkbox">
+								<span class="slider"></span>
+							</label>
 					</div>
-					<label class="switch products" th:id="${product.id}">
-						<input type="checkbox" id="checkbox">
-						<span class="slider"></span>
-					</label>
+					<div class="cloth-img" th:each="product : ${cart}">
+	<!--						<div class="img_container">-->
+							<img class="look_img" th:src="@{${product.logoPicture}}">
+	<!--						</div>-->
+							<label class="switch products" th:id="${product.id}">
+								<input type="checkbox" id="checkbox">
+								<span class="slider"></span>
+							</label>
+					</div>
+					<div class="cloth-img" th:each="product : ${cart}">
+						<!--						<div class="img_container">-->
+												<img class="look_img" th:src="@{${product.logoPicture}}">
+						<!--						</div>-->
+												<label class="switch products" th:id="${product.id}">
+													<input type="checkbox" id="checkbox">
+													<span class="slider"></span>
+												</label>
+										</div>
+										<div class="cloth-img" th:each="product : ${cart}">
+	<!--						<div class="img_container">-->
+							<img class="look_img" th:src="@{${product.logoPicture}}">
+	<!--						</div>-->
+							<label class="switch products" th:id="${product.id}">
+								<input type="checkbox" id="checkbox">
+								<span class="slider"></span>
+							</label>
+					</div>
 				</div>
 				<div class="info-placeholder">
 					<div class="mv-text-contents">
@@ -81,7 +108,7 @@
 						<span class="floating-text">  shopdigger shopdigger shopdigger shopdigger shopdigger shopdigger  </span>
 					</div>
 					<div class="info-placeholder-2">
-	<!--					<input type="hidden" name="id"  th:field="{id}">-->
+						<input type="hidden" name="id"  th:field="{id}">
 						<div id="look-label">Название</div>
 						<div class="look-inputs">
 							<input  id="name" type="text" required name="name" placeholder="Введите название">
@@ -92,7 +119,7 @@
 							<textarea class="look_input_description" id="description" required name="description" placeholder="Введите описание" cols="40" rows="5"></textarea>
 						</div>
 						<label id="success"></label>
-			<!--			<input id="desc-text" type="text" placeholder="Введите описание">-->
+						<!-- <input id="desc-text" type="text" placeholder="Введите описание"> -->
 					</div>
 				</div>
 			</div>
@@ -100,7 +127,7 @@
 		<div class="site-footer">
 			<ul class="foot list-unstyled">
 				<li><a class="footer-text" href="https://github.com/Dmitryq/Agregator">GitHub</a></li>
-				<li><a class="footer-text" href="https://www.google.com/doodles/">Feeling lucky?</a></li>
+				<li><a class="footer-text" th:href="@{/lookamaker}" href="#">Создать свой образ.</a></li>
 			</ul>
 		</div>
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
