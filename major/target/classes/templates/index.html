@@ -17,9 +17,8 @@
 				<div class="top_nav_l1 align-items-lg-center">
 					<div class="top_nav_left"> Прекрасный агрегатор! </div>
 					<div class="d-lg-flex top_nav_right align-items-lg-center">
-						<a class="nav-link" sec:authorize="isAnonymous()" th:href="@{/login}" href="#">Войти</a>
-						или может
-						<a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/logout}" href="#">Выйти</a>
+						<a class="nav-link auth-link" sec:authorize="isAnonymous()" th:href="@{/login}" href="#">Войти</a>
+						<a class="nav-link auth-link" sec:authorize="isAuthenticated()" th:href="@{/logout}" href="#">Выйти</a>
 					</div>
 				</div>
 			</div>
@@ -76,7 +75,7 @@
 		</div>
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 		<script src="../static/js/popper.min.js"></script>
-		<script src="../static/js/kostili.js"></script>
+		<script src="../static/js/kostili.js" th:src="@{/js/kostili.js}"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 		</div>
 	</body>

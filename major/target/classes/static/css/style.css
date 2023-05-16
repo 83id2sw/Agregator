@@ -147,6 +147,13 @@ body {
 		display: block;
 		width: 100% !important;
 	}
+	.lk-container {
+		width: 100% !important;
+		margin: 0 auto !important;
+	}
+	.lk-row {
+		
+	}
 }
 
 .navbar {
@@ -723,9 +730,16 @@ input:checked + .slider:before {
 }
 
 .lk-container {
+	margin: 0 auto;
+	width: 50%;
 	padding: 20px;
 	border: 2px solid white;
 	background: #272727;
+}
+
+.user-data {
+	margin-left: 30%;
+	display: inline-block;
 }
 
 .user-data-2 {
@@ -746,20 +760,28 @@ input:checked + .slider:before {
 	width: 200px !important;
 }
 
+.user-icon-div {
+	margin-left: 120px;
+	display: inline-block;
+}
 
 .user-looks-placeholder {
 	margin-top: 20px !important;
 	margin: 0 auto;
 	text-align: center;
-	width: 70%;
+	width: 60%;
 	background: #272727;
 	border: 2px solid white;
 	color: white;
 }
 
 .cloth-img {
-	margin: 0 20px;
-	margin-bottom: 20px !important;
+	width: 230px;
+	height: 230px;
+	margin: 0 30px;
 	display: inline-block;
 }
 
+.auth-link {
+	position: absolute;
+}

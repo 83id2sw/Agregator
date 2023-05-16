@@ -54,11 +54,15 @@ body {
 @media (max-width:991px) {
 	.collapsed_nav {
 		font-size: 15px;
-		padding-left: 10px;
+		padding: 0 10px;
+		padding-bottom: 5px !important;
 		margin-top: 3px;
+		background: #272727;
+		border-top: 0 !important;
+		border: 4px solid white;
 	}
 	.nav-item {
-		width: 70%;
+		width: 100%;
 		border: solid white 2px;
 		text-align: center;
 		margin-bottom: 4px;
@@ -82,12 +86,14 @@ body {
 	}
 	form {
 		width: 100%;
+		margin: auto;
 	}
 	.input-search {
 		margin-bottom: 4px;
+		margin-right: 0 !important;
 		position: relative;
 		text-align: center;
-		width: 100%;
+		width: 100% !important;
 	}
 	.promo_prompt {
 		width: 90% !important;
@@ -152,7 +158,7 @@ body {
 		margin: 0 auto !important;
 	}
 	.lk-row {
-		
+	
 	}
 }
 
@@ -179,6 +185,10 @@ body {
 
 .form-search {
 	width: 100%;
+}
+
+.ad-row {
+	margin: 0 !important;
 }
 
 .input-search {
@@ -244,11 +254,17 @@ body {
 	padding-bottom: 3px;
 }
 
-.form-control{
+.form-control {
 	-webkit-border-radius: 0;
 	   -moz-border-radius: 0;
 			border-radius: 0;
   }
+
+.custom-file-input {
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+			border-radius: 0;
+}
 
 .login-form  {
 	background: #272727;
@@ -270,9 +286,6 @@ body {
 	background: #FFFFFF;
 }
 
-.products {
-	background: #FFFFFF;
-}
 
 /*
 html {
@@ -615,7 +628,7 @@ body {
 	transition: 0.6s;
 	background: black;
 	border: 2px solid white;
-	color: white;
+	color: white !important;
 }
 
 .cart_btn:hover {
@@ -784,4 +797,48 @@ input:checked + .slider:before {
 
 .auth-link {
 	position: absolute;
+}
+
+.cat-col {
+	background: #272727 !important;
+	color: #FFFFFF !important;
+	border: 2px solid #777777 !important;
+	font-weight: 400 !important;
+}
+
+.products {
+	background: #272727;
+	border: 2px solid white !important;
+}
+
+.col_btn {
+	padding-left: 0 !important;
+}
+
+.item-name {
+	width: 100% !important;
+}
+
+.category-add {
+	margin: auto;
+	width: 30%;
+}
+
+.cat-form {
+	margin: auto;
+}
+
+.cat_btn {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 10px !important;
+}
+
+#cat-add-lb {
+	display: block;
+	color: white;
+	margin-top: 5px !important;
+	margin: 5 auto;
+	text-align: center;
+	font-size: 15px;
 }
