@@ -49,19 +49,19 @@
                </div>
             </nav>
          </div>
-         <div class="container mt-5 products cart_border">
+         <div class="container mt-5 products cart_border vwp-body">
             <div class="row">
                <div class="col-sm-5 d-flex justify-content-center">
                   <img class="view_img" height="600px" width="400px" th:src="@{${product.normalPicture}}">
                </div>
-               <div class="col-sm-7 mt-5">
+               <div class="col-sm-7 mt-5 vwp-filing">
                   <h2 th:text="${product.name}"></h2>
-                  <h2 class="cart_text cart_border">Цена <span th:text="${product.price}"></span></h2>
-                  <p class="cart_text cart_border" th:text="${product.brand}"></p>
-                  <p class="cart_text cart_border" th:text="${product.categoryName}"></p>
-                  <p class="cart_text cart_border" th:text="${product.colors}"></p>
+                  <h2 class="cart_text cprice-mob">Цена <span th:text="${product.price}"></span></h2>
+                  <p class="cart_text text-underline ctext-mob" th:text="${product.brand}">fds</p>
+                  <p class="cart_text text-underline ctext-mob" th:text="${product.categoryName}">gsdf</p>
+                  <p class="cart_text text-underline ctext-mob" th:text="${product.colors}">hgs</p>
                   <!--            <a href="" th:href="@{/addToCart/{productType}(productType=${category.id}, sex=${sex})}" class="btn btn-primary">Add to favourites</a>-->
-                  <a href="" th:href="@{/addToCart/{id}(id=${product.code})}" class="btn cart_btn">В избранное</a>
+                  <a href="" th:href="@{/addToCart/{id}(id=${product.code})}" class="btn cart_btn center-btn">В избранное</a>
                </div>
             </div>
          </div>
