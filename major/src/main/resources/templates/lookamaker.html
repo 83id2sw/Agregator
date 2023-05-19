@@ -57,7 +57,7 @@
 <!--						<div class="img_container">-->
 							<img class="look_img" th:src="@{${product.logoPicture}}">
 <!--						</div>-->
-							<label class="switch products" th:id="${product.id}">
+							<label class="switch" th:id="${product.id}">
 								<input type="checkbox" id="checkbox">
 								<span class="slider"></span>
 							</label>
@@ -81,9 +81,10 @@
 					</div>
 					<div class="info-placeholder-2">
 <!--						<input type="hidden" name="id"  th:field="{id}">-->
-						<div id="look-label">Название</div>
+		
 						<div class="look-inputs">
-							<input  id="name" type="text" required name="name" placeholder="Введите название">
+							<div id="look-label">Название</div>
+							<input class="mob-input" id="name" type="text" required name="name" placeholder="Введите название">
 							<button class="cart_btn look_btn" onclick="createNewSet()">Сохранить</button>
 						</div>
 						<div class="look-inputs">

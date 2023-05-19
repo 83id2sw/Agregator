@@ -68,6 +68,10 @@ body {
 		margin-bottom: 4px;
 		background-color: #272727;
 	}
+	.mob-input {
+		font-size: 16px;
+		width: 100% !important;
+	}
 	.top_nav {
 		display: none;
 	}
@@ -110,6 +114,20 @@ body {
 	h1 {
 	  font-size: 18px;
 	}
+	.mob-shop {
+		width: 100% !important;
+		padding: 0 !important;
+	}
+	.cart-text-mob {
+		margin-bottom: 10px;
+	}
+	.vwp-body {
+		margin-bottom: 80px;
+	}
+	.vwp-filing {
+		margin-top: 0 !important;
+		margin-bottom: 20px;
+	}
 	.site-footer {
 		margin-top: 20px;
 	}
@@ -119,17 +137,22 @@ body {
 	.look-container {
 		width: 100vw !important;
 	}
+	.cprice-mob {
+		text-align: right;
+		font-size: 34px;
+	}
+	.ctext-mob {
+		font-size: 20px;
+		margin-bottom: 0 !important;
+	}
 	.info-placeholder-2 {
-		max-width: 300px !important;
+		max-width: 80% !important;
 	}
 	#look_add_info {
 		font-size: 20px !important;
 	}
-	#name {
-		font-size: 16px;
-		width: 90% !important;
-	}
 	.look_btn {
+		width: 100% !important;
 		font-size: 16px;
 	}
 	#look-label {
@@ -137,10 +160,12 @@ body {
 		padding: 0 !important;
 		width: auto !important;
 		margin: 0 auto !important;
+		text-align: center !important;
 	}
 	#look-desc {
 		margin: 0 !important;
 		font-size: 20px;
+		text-align: center !important;
 	}
 	.look_input_description {
 		font-size: 16px;
@@ -157,8 +182,9 @@ body {
 		width: 100% !important;
 		margin: 0 auto !important;
 	}
-	.lk-row {
-	
+	.center-btn {
+		margin-top: 10px;
+		display: block;
 	}
 }
 
@@ -417,6 +443,7 @@ body {
 }
 
 .items-placeholder {
+	padding-bottom: 30px;
 	margin: 0 auto;
 	overflow: auto;
 	width: 80%;
@@ -841,4 +868,8 @@ input:checked + .slider:before {
 	margin: 5 auto;
 	text-align: center;
 	font-size: 15px;
+}
+
+.text-underline {
+	text-decoration: underline;
 }
