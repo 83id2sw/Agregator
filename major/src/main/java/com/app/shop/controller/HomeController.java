@@ -13,6 +13,7 @@ import com.app.shop.service.CategoryService;
 import com.app.shop.service.ClothSetService;
 import com.app.shop.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -70,7 +71,6 @@ public class HomeController {
      */
     @GetMapping({"/", "/home"})
     public String home(@AuthenticationPrincipal User user, Model model) {
-
         user = user == null ?null: userRepository.findUserByEmail(user.getEmail()).get();
 
 
