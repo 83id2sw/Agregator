@@ -77,8 +77,7 @@ public class ClothSetController {
       **/
     @PostMapping("/lookamaker/add")
     public String lookamekerPost(@AuthenticationPrincipal User user, @RequestBody Map<String, String> data){
-        clothSetService.addClothSet(user, data);
-        return "redirect:/";
+        return clothSetService.addClothSet(user, data);
     }
 
 }
