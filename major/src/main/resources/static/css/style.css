@@ -916,6 +916,10 @@ input:checked + .slider:before {
 }
 
 #look-name {
+	margin: 0 auto;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 170px;
 	color: #949494;
 	margin-bottom: 0;
 }
@@ -937,6 +941,7 @@ input:checked + .slider:before {
 }
 
 .user-look-div {
+	overflow: hidden;
 	margin: 0px 10px;
 }
 
@@ -944,7 +949,7 @@ input:checked + .slider:before {
 	margin-right: auto;
 	margin-left: auto;
 	display: block;
-	width: 70%;
+	width: 10	0%;
 	margin-top: 10px;
 	font-size: 15px;
 }
