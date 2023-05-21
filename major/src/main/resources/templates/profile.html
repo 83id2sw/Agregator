@@ -68,13 +68,13 @@
       </div>
       <div class="user-looks-placeholder">
          <div id="look_add_info">Ваши образы</div>
-         <div class="cloth-img" th:each="set : ${clothSet}">
-            <p th:text="${set.name}" >Название</p>
-            <div class="cloth-img">
-               <img class="img-fluid w-100 cart_img"
+         <div class="user-looks" th:each="set : ${clothSet}">
+            <p id="look-name" th:text="${set.name}" >Название</p>
+            <div class="user-look-div">
+               <img class="created-look-img"
                     th:src="@{${set.getProducts().get(0).logoPicture}}"
                     src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12a.jpg" alt="Sample">
-               <a href="#" th:href="@{/profile/clothsetpage/{id}(id=${set.getId()})}" class="btn cart_btn">Просмотр</a>
+               <a href="#" th:href="@{/profile/clothsetpage/{id}(id=${set.getId()})}" class="btn cart_btn view-look-btn">Просмотр</a>
             </div>
          </div>
       </div>

@@ -482,6 +482,7 @@ body {
 
 #look_add_info {
 	font-size: 25px;
+	border-bottom: 2px solid #777777;
 }
 
 .floating-text {	
@@ -844,8 +845,10 @@ input:checked + .slider:before {
 }
 
 .user-looks-placeholder {
+	padding-bottom: 20px;
 	margin-top: 20px !important;
 	margin: 0 auto;
+	margin-bottom: 50px !important;
 	text-align: center;
 	width: 60%;
 	background: #272727;
@@ -910,4 +913,38 @@ input:checked + .slider:before {
 
 .text-underline {
 	text-decoration: underline;
+}
+
+#look-name {
+	color: #949494;
+	margin-bottom: 0;
+}
+
+.user-looks {
+	margin: 0px 5px;
+	overflow: hidden;
+	padding-bottom: 20px;
+	display: inline-block;
+	margin-top: 10px !important;
+	font-size: 20px;
+	border: 2px solid white;
+}
+
+
+.created-look-img {
+	height: 200px;
+	border: 3px solid black;
+}
+
+.user-look-div {
+	margin: 0px 10px;
+}
+
+.view-look-btn {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	width: 70%;
+	margin-top: 10px;
+	font-size: 15px;
 }
