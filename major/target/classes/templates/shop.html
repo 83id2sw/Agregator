@@ -32,7 +32,10 @@
                      <div class="form-search">
                         <form class="form-inline my-2 my-lg-0" th:action="@{/shopSearch/{sex}/{productType}(productType=${productType}, sex=${sex})}" th:method="GET">
                            <input class="input-search" type="search" name="search" placeholder="Что ищем?" aria-label="search">
-                           <button class="seacrh-btn search-btn-outline-success" type="submit">Поиск</button>
+                           <button class="search-btn-outline-success">
+                              <img id="search-icon"  th:src="@{/images/search.png}" src="../static/images/search.png">
+                              Поиск
+                          </button>
                         </form>
                      </div>
                      <ul class="navbar-nav mr-auto">
@@ -76,7 +79,7 @@
                         <div class="col-sm-7 d-flex justify-content-center">
                            <div class="card-body">
                               <h5 class="card-title" th:text="${product.name}">??вставить сюда название товара??</h5>
-                              <h4>Цена <span th:text="${product.price}"></span></h4>
+                              <h4 class="item-price">₽<span th:text="${product.price}"></span></h4>
                               <p th:text="${product.brand}" >Бренд</p>
                               <p th:text="${product.categoryName}" >Пол (хз нах нужен)</p>
                               <a href="#" th:href="@{/shop/viewproduct/{id}(id=${product.code})}" class="btn cart_btn">Просмотр</a>
@@ -95,8 +98,12 @@
             </ul>
          </div>
          <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-         <script src="../static/js/popper.min.js"></script>
-         <script src="../static/js/kostili.js"></script>
+<!--         <script src="../static/js/popper.min.js"></script>-->
+<!--         <script src="../static/js/price-conversion.js"></script>-->
+<!--         <script src="../static/js/kostili.js"></script>-->
+         <script type="text/javascript" th:src="@{/js/price-conversion.js}"></script>
+         <script type="text/javascript" th:src="@{/js/popper.min.js}"></script>
+         <script type="text/javascript" th:src="@{/js/kostili.js}"></script>
          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
       </div>
    </body>

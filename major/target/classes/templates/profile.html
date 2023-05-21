@@ -22,34 +22,36 @@
                </div>
             </div>
          </div>
-         <div class="navbar">
-            <nav class="w-75 navbar-expand-lg">
-               <div class="container-fluid nav_mobile">
-                  <a class="navbar-brand" th:href="@{/}" href="#"> <img th:src="@{/images/logo_word.png}"  src="../static/images/logo_word.png" width="auto" height="25" class="d-inline-block fa-align-center image-logo" alt=""/> </a>
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"><img class="navbar_dropdown_icon" src="../static/images/menu.png"></span> </button>
-                  <div class="collapse navbar-collapse collapsed_nav" id="navbarSupportedContent">
-                     <div class="form-search">
-                        <form class="form-inline">
-                           <input class="input-search" type="search" placeholder="Что ищем?" aria-label="search">
-                           <button class="search-btn-outline-success" type="submit">Поиск</button>
-                        </form>
-                     </div>
-                     <ul class="navbar-nav mr-auto">
-                     </ul>
-                     <ul class="navbar-nav">
-                        <li class="nav-item active"> <a class="nav-link" th:href="@{/shop/men_all/-1}" href="#">Мужчинам<span class="sr-only">(current)</span></a> </li>
-                        <li class="nav-item active"> <a class="nav-link" th:href="@{/shop/Ladies/-1}" href="#">Женщинам</a> </li>
-                        <!--          <li class="nav-item active"> <a class="nav-link" th:href="@{/shop/-1}" href="#">shop</a> </li>-->
-                        <li class="nav-item active"> <a class="nav-link mobile_auth" sec:authorize="isAnonymous()" th:href="@{/login}" href="#">Войти</a> </li>
-                        <li class="nav-item active"> <a class="nav-link mobile_auth" sec:authorize="isAuthenticated()" th:href="@{/logout}" href="#">Выйти</a> </li>
-                        <li class="nav-item active"> <a class="nav-link" th:href="@{/cart}" href="#">Избранное</a> </li>
-                        <li class="nav-item active"> <a class="nav-link" th:href="@{/profile}" href="#">Профиль</a> </li>
-                        <li class="nav-item active"> <span class="nav-link" th:text="${cartCount}">0</span> </li>
-                     </ul>
-                  </div>
-               </div>
-            </nav>
-         </div>
+			<div class="navbar">
+				<nav class="w-75 navbar-expand-lg">
+					<div class="container-fluid nav_mobile">
+						<a class="navbar-brand" th:href="@{/}" href="#"> <img th:src="@{/images/logo_word.png}"  src="../static/images/logo_word.png" width="auto" height="25" class="d-inline-block fa-align-center image-logo" alt=""/> </a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"><img class="navbar_dropdown_icon" src="../static/images/menu.png"></span> </button>
+					  <div class="collapse navbar-collapse collapsed_nav" id="navbarSupportedContent">
+							<div class="form-search">
+								<form class="form-inline">
+									<input class="input-search" type="search" placeholder="Что ищем?" aria-label="search">
+									<button class="search-btn-outline-success">
+										<img id="search-icon"  th:src="@{/images/search.png}" src="../static/images/search.png">
+										Поиск
+									</button>
+								</form>
+							</div>
+						<ul class="navbar-nav mr-auto">
+						  </ul>
+						  <ul class="navbar-nav">
+							  <li class="nav-item active"> <a class="nav-link" th:href="@{/shop/men_all/-1}" href="#">Мужчинам<span class="sr-only">(current)</span></a> </li>
+							  <li class="nav-item active"> <a class="nav-link" th:href="@{/shop/Ladies/-1}" href="#">Женщинам</a> </li>
+							  <!--          <li class="nav-item active"> <a class="nav-link" th:href="@{/shop/-1}" href="#">shop</a> </li>-->
+							  <li class="nav-item active"> <a class="nav-link mobile_auth" sec:authorize="isAnonymous()" th:href="@{/login}" href="#">Войти</a> </li>
+							  <li class="nav-item active"> <a class="nav-link mobile_auth" sec:authorize="isAuthenticated()" th:href="@{/logout}" href="#">Выйти</a> </li>
+							  <li class="nav-item active"> <a class="nav-link" th:href="@{/cart}" href="#">Избранное</a> </li>
+							  <li class="nav-item active"> <span class="nav-link" th:text="${cartCount}">750</span> </li>
+						  </ul>
+						</div>
+					</div>
+				</nav>
+			</div>
       </div>
       <div class="products lk-container">
          <div class="lk-row">
