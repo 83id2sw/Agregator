@@ -1,11 +1,16 @@
 package com.app.shop.controller;
 
 
+import com.app.shop.model.Cart;
+import com.app.shop.model.ClothSet;
+import com.app.shop.model.Product;
 import com.app.shop.model.User;
 import com.app.shop.repository.CartRepository;
+import com.app.shop.repository.ClothSetRepository;
 import com.app.shop.repository.ProductRepository;
 import com.app.shop.repository.UserRepository;
 import com.app.shop.service.CategoryService;
+import com.app.shop.service.ClothSetService;
 import com.app.shop.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -14,6 +19,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Controller for home page.
@@ -44,6 +52,12 @@ public class HomeController {
      * */
     @Autowired
     CartRepository cartRepository;
+
+    @Autowired
+    ClothSetService clothSetService;
+
+    @Autowired
+    ClothSetRepository clothSetRepository;
 
     @Autowired
     ProductRepository productRepository;
@@ -85,7 +99,17 @@ public class HomeController {
         model.addAttribute("profile", user);
         model.addAttribute("cartCount", cartRepository.findCartByUser(user) != null && cartRepository.findCartByUser(user).getProducts().size() != 0
                 ?cartRepository.findCartByUser(user).getProducts().size() : "");
+
+        List<ClothSet> clothSet = clothSetRepository.findClothSetsByUser(userRepository.findUserByEmail(user.getEmail()).get());
+        model.addAttribute("clothSet", clothSet);
+
         return "profile";
+    }
+
+    @GetMapping("/profile/clothsetpage/{id}")
+    public String shopByCategory(Model model, @PathVariable Integer id) {
+        model.addAttribute("clothSet", clothSetRepository.findClothSetById(id));
+        return "clothsetpage";
     }
 
     /**

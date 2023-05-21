@@ -45,7 +45,7 @@ public class ClothSetService {
      *
      @param data Data of cloth set.
      **/
-    public void addClothSet(User user, Map<String, String> data) {
+    public String addClothSet(User user, Map<String, String> data) {
         user = userRepository.findUserByEmail(user.getEmail()).get();
 
         ClothSet clothSet = new ClothSet();
@@ -63,6 +63,9 @@ public class ClothSetService {
 
         clothSet.setProducts(products);
 
+
         clothSetRepository.save(clothSet);
+
+        return "redirect:/";
     }
 }
