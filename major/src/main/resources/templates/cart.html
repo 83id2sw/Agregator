@@ -103,6 +103,7 @@
 														<h5 class="cart_text" th:text="${product.name}">Blue denim shirt</h5>
 														<p class="mb-2 text-uppercase small cart_text">Категория: <span th:text="${product.categoryName}"></span></p>
 														<p class="mb-2 text-uppercase small cart_text">Бренд: <span th:text="${product.brand}"></span></p>
+														<p class="mb-2 text-uppercase cart_text"><span><strong class="item-price" >$<span th:text="${product.price}"></span></strong></span></p>
 													</div>
 
 												</div>
@@ -112,9 +113,7 @@
 																class="mr-1 "></i> Удалить </a>
 														<a href="#" th:href="@{/shop/viewproduct/{id}(id=${product.code})}" class="btn cart_btn">Просмотр</a>
 														<a href="#" th:href="@{${product.linkPdp}}" class="btn cart_btn">На сайт магазина</a>
-
 													</div>
-													<p class="mb-0"><span><strong>$<span class="item-price" th:text="${product.price}"></span></strong></span></p>
 												</div>
 											</div>
 										</div>
