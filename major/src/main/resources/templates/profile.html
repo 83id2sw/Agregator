@@ -54,18 +54,16 @@
 				</nav>
 			</div>
       </div>
-      <div class="products lk-container">
-         <div class="lk-row">
+      <div class="lk-container">
             <div class="user-icon-div">
                <img id="user-icon"  th:src="@{/images/user_icon.png}" src="../static/images/user_icon.png">
             </div>
             <div class="user-data">
-               <h2 id="user-id" th:text="${profile.getId()}">id</h2>
                <h2 class="user-data-2" th:text="${profile.getFirstName()}">имя</h2>
                <h2 class="user-data-2" th:text="${profile.getLastName()}">фамилия</h2>
                <h2 class="user-data-2" th:text="${profile.getEmail()}">почта</h2>
+               <h2 id="user-id" th:text="${profile.getId()}">id</h2>
             </div>
-         </div>
       </div>
       <div class="user-looks-placeholder">
          <div id="look_add_info">Ваши образы</div>
