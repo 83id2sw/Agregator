@@ -50,39 +50,37 @@
     </nav>
   </div>
 
-  <div class="container mt-5 products cart_border vwp-body">
-    <div class="row">
-      <div class="col-sm-5 d-flex justify-content-center">
-        <img class="img-fluid w-100 cart_img"
+  <div class="clothset-contaier">
+      <div class="clothset-image-div">
+        <img class="clothset-image"
              th:src="@{${clothSet.getProducts().get(0).logoPicture}}"
              src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12a.jpg" alt="Sample">
       </div>
-      <div class="col-sm-7 mt-5 vwp-filing">
-        <h2 th:text="${clothSet.name}" >Название</h2>
-        <h2 th:text="${clothSet.description}" >Описание</h2>
+      <div class="clothset-info">
+        <h2 id="clothset-name" th:text="${clothSet.name}" >НазваниеНазваниеНазваниеНазваниеНазвание</h2>
+        <h2 id="clothset-desc" th:text="${clothSet.description}" >fafasdafsdafsdasfdasfdfssdafsfafasdafsdafsdasfdasfdfssdafsfafasdafsdafsdasfdasfdfssdafsfafasdafsdafsdasfdasfdfssdafsfafasdafsdafsdasfdasfdfssdafsfafasdafsdafsdasfdasfdfssdafsfafasdafsdafsdasfdasfdfssdafs</h2>
       </div>
-    </div>
   </div>
 
-  <div class="items-placeholder" >
-    <div id="look_add_info">Товары в луке</div>
-    <div class="cloth-img" th:each="product : ${clothSet.getProducts()}">
-      <img class="look_img" th:src="@{${product.logoPicture}}">
-      <div class="col-md-7 col-lg-9 col-xl-9">
+  <div class="clothset-items-placeholder" >
+    <div id="clothset-items">Товары в образе</div>
+    <div class="clothset-products" th:each="product : ${clothSet.getProducts()}">
+      <img class="look_img clothset-item-image" th:src="@{${product.logoPicture}}">
+      <div class="clothset-items-info">
         <div>
-          <div class="d-flex justify-content-between">
+          <div class="">
             <div>
-              <h5 class="cart_text" th:text="${product.name}">Blue denim shirt</h5>
-              <p class="mb-2 text-uppercase small cart_text">Категория: <span th:text="${product.categoryName}"></span></p>
-              <p class="mb-2 text-uppercase small cart_text">Бренд: <span th:text="${product.brand}"></span></p>
+              <h5 class="clothset-item-name" th:text="${product.name}">Blue denim shirt</h5>
+              <p class="mb-2 text-uppercase small cart_text category-name clothset-item-desc">Pants<span th:text="${product.categoryName}"></span></p>
+              <p class="mb-2 text-uppercase small cart_text clothset-item-desc">Бренд<span th:text="${product.brand}"></span></p>
             </div>
 
           </div>
-          <div class="mt-5 d-flex justify-content-between align-items-center">
+          <div class="">
             <div>
-              <a href="#" th:href="@{/shop/viewproduct/{id}(id=${product.code})}" class="btn cart_btn">Просмотр</a>
+              <a href="#" th:href="@{/shop/viewproduct/{id}(id=${product.code})}" class="btn cart_btn clothset-btn">Просмотр</a>
             </div>
-            <p class="mb-0"><span><strong>$<span th:text="${product.price}"></span></strong></span></p>
+            <p class="mb-0 clothset-item-price item-price"><span>$321132<span th:text="${product.price}"></span></span></p>
           </div>
         </div>
       </div>
@@ -95,6 +93,8 @@
       <li><a class="footer-text" th:href="@{/lookamaker}" href="#">Создать свой образ.</a></li>
     </ul>
   </div>
+  <script src="../static/js/price-conversion.js"></script>
+	<script type="text/javascript" th:src="@{/js/price-conversion.js}"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="../static/js/popper.min.js"></script>
   <script src="../static/js/kostili.js"></script>

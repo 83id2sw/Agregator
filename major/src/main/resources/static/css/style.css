@@ -189,6 +189,23 @@ body {
 		margin-top: 10px;
 		display: block;
 	}
+	.lk-container {
+		display: block;
+		width: 90% !important;
+	}
+	.user-looks-placeholder {
+		width: 90% !important;
+	}
+	.user-icon-div {
+		width: 200px;
+		margin: 0 auto !important;
+		display: block !important;
+	}
+	.user-data {
+		display: block !important;
+		margin-left: 20px !important;
+		margin-top: 20px !important;
+	}
 }
 
 @media (max-width:1650px) {
@@ -937,13 +954,14 @@ input:checked + .slider:before {
 	display: inline-block;
 	margin-top: 10px !important;
 	font-size: 20px;
+	background-color: #000000;
 	border: 2px solid white;
 }
 
 
 .created-look-img {
 	height: 200px;
-	border: 3px solid black;
+	border: 3px solid #228E5D;
 }
 
 .user-look-div {
@@ -955,7 +973,118 @@ input:checked + .slider:before {
 	margin-right: auto;
 	margin-left: auto;
 	display: block;
-	width: 10	0%;
+	width: 100%;
 	margin-top: 10px;
 	font-size: 15px;
+}
+
+.clothset-contaier {
+	margin: 0 auto;
+	width: 50%;
+	background: #272727;
+	margin-bottom: 30px;
+	border: 2px solid white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.clothset-image-div {
+	margin: 10px 10px;
+}
+
+.clothset-image { 
+	height: 250px;
+	border: 2px solid #228E5D;
+}
+
+#clothset-name {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 30px;
+	text-decoration: underline;
+}
+
+#clothset-desc {
+	color: white;
+	background: #202020;
+	word-wrap: break-word;
+	margin: auto 0;
+	overflow-y: auto;
+	max-height: 200px;
+	display: inline-block;
+	width: 100%;
+	height: 180px;
+	border: 2px solid white;
+}
+
+.clothset-info {
+	margin: auto 0;
+	width: 60%;
+	position: sticky;
+	margin-top: 20px !important;
+    vertical-align: top;
+	color: white;
+}
+
+#clothset-items {
+	font-size: 30px;
+	text-align: center;
+	text-decoration: none;
+	border-bottom: 2px solid white;
+}
+
+.clothset-items-placeholder {
+	padding-bottom: 20px;
+    margin-top: 20px !important;
+    margin: 0 auto;
+    margin-bottom: 50px !important;
+    text-align: center;
+    width: 60%;
+    background: #272727;
+    border: 2px solid white;
+    color: white;
+}
+
+.clothset-products {
+	margin: 0px 5px;
+	overflow: hidden;
+	padding-bottom: 20px;
+	display: inline-block;
+	margin-top: 10px !important;
+	font-size: 20px;
+	background-color: #000000;
+	border: 2px solid white;
+}
+
+.clothset-item-name {
+	text-align: center;
+}
+
+.clothset-btn {
+	display: block;
+	border-left: 0;
+	border-right: 0;
+}
+
+.clothset-item-desc {
+	text-align: center;
+}
+
+.clothset-item-price {
+	text-align: center;
+}
+
+.clothset-item-image {
+	margin-top: 10px !important;
+	display: block;
+	margin: 0 auto;
+}
+
+@media (max-width:1290px) {
+	.clothset-contaier {
+		width: 70%;
+	}
 }
