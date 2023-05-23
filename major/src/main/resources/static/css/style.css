@@ -206,6 +206,33 @@ body {
 		margin-left: 20px !important;
 		margin-top: 20px !important;
 	}
+	.clothset-contaier {
+		width: 100% !important;
+	}
+	.clothset-image {
+		height: 150px !important;
+	}
+	#clothset-name {
+		font-size: 24px !important;
+	}
+	#clothset-desc {
+		width: 95% !important;
+		font-size: 15px;
+		height: 100px !important;
+	}
+	.clothset-info {
+		margin-top: 15px !important;
+		margin-right: auto;
+	}
+	.clothset-items-placeholder {
+		width: 90% !important;
+	}
+	#clothset-items {
+		font-size: 24px !important;
+	}
+	.clothset-products {
+		font-size: 15px;
+	}
 }
 
 @media (max-width:1650px) {
@@ -222,7 +249,7 @@ body {
 		margin-right: auto;
 	}
 	.input-search {
-		width: 40% !important;
+		width: 40%;
 	}
 }
 
@@ -1008,7 +1035,7 @@ input:checked + .slider:before {
 }
 
 #clothset-desc {
-	color: white;
+	color: #A8A8A8;
 	background: #202020;
 	word-wrap: break-word;
 	margin: auto 0;
@@ -1021,15 +1048,15 @@ input:checked + .slider:before {
 }
 
 .clothset-info {
-	margin: auto 0;
+	margin: auto auto 20px;
 	width: 60%;
 	position: sticky;
-	margin-top: 20px !important;
     vertical-align: top;
 	color: white;
 }
 
 #clothset-items {
+	color: #228E5D;
 	font-size: 30px;
 	text-align: center;
 	text-decoration: none;
@@ -1049,6 +1076,7 @@ input:checked + .slider:before {
 }
 
 .clothset-products {
+	color: #A8A8A8;
 	margin: 0px 5px;
 	overflow: hidden;
 	padding-bottom: 20px;
@@ -1070,6 +1098,7 @@ input:checked + .slider:before {
 }
 
 .clothset-item-desc {
+	color: #6b6b6b;
 	text-align: center;
 }
 
