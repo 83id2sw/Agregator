@@ -60,8 +60,8 @@
                </div>
                <div class="col-sm-7 mt-5 vwp-filing">
                   <h2 th:text="${product.name}"></h2>
-                  <h2 class="vp-price-text cprice-mob item-price">$423<span th:text="${product.price}"></span></h2>
-                  <p class="vp-text  th:text="${product.brand}">fds</p>
+                  <h2 class="vp-price-text cprice-mob item-price">$<span th:text="${product.price}"></span></h2>
+                  <p class="vp-text" th:text="${product.brand}">fds</p>
                   <p class="vp-text" th:text="${product.categoryName}">gsdf</p>
                   <p class="vp-text" th:text="${product.colors}">hgs</p>
                   <!--            <a href="" th:href="@{/addToCart/{productType}(productType=${category.id}, sex=${sex})}" class="btn btn-primary">Add to favourites</a>-->
