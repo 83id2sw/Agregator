@@ -123,13 +123,7 @@ body {
 	.cart-text-mob {
 		margin-bottom: 10px;
 	}
-	.vwp-body {
-		margin-bottom: 80px;
-	}
-	.vwp-filing {
-		margin-top: 0 !important;
-		margin-bottom: 20px;
-	}
+
 	.site-footer {
 		margin-top: 20px;
 	}
@@ -901,7 +895,7 @@ input:checked + .slider:before {
 	margin-bottom: 50px !important;
 	text-align: center;
 	width: 60%;
-	background: #272727;
+	background: #1d1d1d;
 	border: 2px solid white;
 	color: white;
 }
@@ -1116,4 +1110,39 @@ input:checked + .slider:before {
 	.clothset-contaier {
 		width: 70%;
 	}
+}
+
+.vp-img {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.vwp-body {
+	margin: 0 auto;
+	justify-self: center;
+	margin-bottom: 80px;
+}
+
+.vwp-filing {
+	background: #272727;
+	border: 2px solid white;
+	max-width: 30%;
+	margin-top: 0 !important;
+	margin-bottom: 20px;
+	height: 190px;
+}
+
+.vwp-button {
+	display: block;
+}
+
+.vp-price-text {
+	color: white;
+}
+
+.vp-text {
+	text-align: center;
+	text-decoration: underline;
+	color: white;
+	font-size: 15px;
 }

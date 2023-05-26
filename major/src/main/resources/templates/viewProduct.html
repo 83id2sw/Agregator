@@ -53,19 +53,19 @@
 					</div>
 				</nav>
 			</div>
-         <div class="container mt-5 products cart_border vwp-body">
-            <div class="row">
-               <div class="col-sm-5 d-flex justify-content-center">
+         <div class="container mt-5">
+            <div class="row vwp-body">
+               <div class="col-sm-5 d-flex cart_border justify-content-center vp-img">
                   <img class="view_img" height="600px" width="400px" th:src="@{${product.normalPicture}}">
                </div>
                <div class="col-sm-7 mt-5 vwp-filing">
                   <h2 th:text="${product.name}"></h2>
-                  <h2 class="cart_text cprice-mob">Цена <span th:text="${product.price}"></span></h2>
-                  <p class="cart_text text-underline ctext-mob" th:text="${product.brand}">fds</p>
-                  <p class="cart_text text-underline ctext-mob" th:text="${product.categoryName}">gsdf</p>
-                  <p class="cart_text text-underline ctext-mob" th:text="${product.colors}">hgs</p>
+                  <h2 class="vp-price-text cprice-mob item-price">$423<span th:text="${product.price}"></span></h2>
+                  <p class="vp-text  th:text="${product.brand}">fds</p>
+                  <p class="vp-text" th:text="${product.categoryName}">gsdf</p>
+                  <p class="vp-text" th:text="${product.colors}">hgs</p>
                   <!--            <a href="" th:href="@{/addToCart/{productType}(productType=${category.id}, sex=${sex})}" class="btn btn-primary">Add to favourites</a>-->
-                  <a href="" th:href="@{/addToCart/{id}(id=${product.code})}" class="btn cart_btn center-btn">В избранное</a>
+                  <a href="" th:href="@{/addToCart/{id}(id=${product.code})}" class="btn cart_btn center-btn vwp-button">В избранное</a>
                </div>
             </div>
          </div>
@@ -75,6 +75,8 @@
                <li><a class="footer-text" th:href="@{/lookamaker}" href="#">Создать свой образ.</a></li>
             </ul>
          </div>
+         <script src="../static/js/price-conversion.js"></script>
+         <script type="text/javascript" th:src="@{/js/price-conversion.js}"></script>
          <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
          <script src="../static/js/popper.min.js"></script>
          <script src="../static/js/kostili.js"></script>
